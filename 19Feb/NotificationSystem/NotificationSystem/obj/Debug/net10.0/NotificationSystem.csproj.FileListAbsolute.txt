@@ -1,0 +1,14 @@
+E:\CapG\NotificationSystem\NotificationSystem\bin\Debug\net10.0\NotificationSystem.exe
+E:\CapG\NotificationSystem\NotificationSystem\bin\Debug\net10.0\NotificationSystem.deps.json
+E:\CapG\NotificationSystem\NotificationSystem\bin\Debug\net10.0\NotificationSystem.runtimeconfig.json
+E:\CapG\NotificationSystem\NotificationSystem\bin\Debug\net10.0\NotificationSystem.dll
+E:\CapG\NotificationSystem\NotificationSystem\bin\Debug\net10.0\NotificationSystem.pdb
+E:\CapG\NotificationSystem\NotificationSystem\obj\Debug\net10.0\NotificationSystem.GeneratedMSBuildEditorConfig.editorconfig
+E:\CapG\NotificationSystem\NotificationSystem\obj\Debug\net10.0\NotificationSystem.AssemblyInfoInputs.cache
+E:\CapG\NotificationSystem\NotificationSystem\obj\Debug\net10.0\NotificationSystem.AssemblyInfo.cs
+E:\CapG\NotificationSystem\NotificationSystem\obj\Debug\net10.0\NotificationSystem.csproj.CoreCompileInputs.cache
+E:\CapG\NotificationSystem\NotificationSystem\obj\Debug\net10.0\NotificationSystem.dll
+E:\CapG\NotificationSystem\NotificationSystem\obj\Debug\net10.0\refint\NotificationSystem.dll
+E:\CapG\NotificationSystem\NotificationSystem\obj\Debug\net10.0\NotificationSystem.pdb
+E:\CapG\NotificationSystem\NotificationSystem\obj\Debug\net10.0\NotificationSystem.genruntimeconfig.cache
+E:\CapG\NotificationSystem\NotificationSystem\obj\Debug\net10.0\ref\NotificationSystem.dll

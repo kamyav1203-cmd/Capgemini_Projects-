@@ -1,0 +1,15 @@
+E:\CapG\GeneralDes\GeneralDes\bin\Debug\net9.0\GeneralDes.exe
+E:\CapG\GeneralDes\GeneralDes\bin\Debug\net9.0\GeneralDes.deps.json
+E:\CapG\GeneralDes\GeneralDes\bin\Debug\net9.0\GeneralDes.runtimeconfig.json
+E:\CapG\GeneralDes\GeneralDes\bin\Debug\net9.0\GeneralDes.dll
+E:\CapG\GeneralDes\GeneralDes\bin\Debug\net9.0\GeneralDes.pdb
+E:\CapG\GeneralDes\GeneralDes\obj\Debug\net9.0\GeneralDes.GeneratedMSBuildEditorConfig.editorconfig
+E:\CapG\GeneralDes\GeneralDes\obj\Debug\net9.0\GeneralDes.AssemblyInfoInputs.cache
+E:\CapG\GeneralDes\GeneralDes\obj\Debug\net9.0\GeneralDes.AssemblyInfo.cs
+E:\CapG\GeneralDes\GeneralDes\obj\Debug\net9.0\GeneralDes.csproj.CoreCompileInputs.cache
+E:\CapG\GeneralDes\GeneralDes\obj\Debug\net9.0\GeneralDes.sourcelink.json
+E:\CapG\GeneralDes\GeneralDes\obj\Debug\net9.0\GeneralDes.dll
+E:\CapG\GeneralDes\GeneralDes\obj\Debug\net9.0\refint\GeneralDes.dll
+E:\CapG\GeneralDes\GeneralDes\obj\Debug\net9.0\GeneralDes.pdb
+E:\CapG\GeneralDes\GeneralDes\obj\Debug\net9.0\GeneralDes.genruntimeconfig.cache
+E:\CapG\GeneralDes\GeneralDes\obj\Debug\net9.0\ref\GeneralDes.dll

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Track User Login Activity</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: #f0f2f5;
+    }
+    .login-box {
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 320px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 24px;
+      color: #333;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #4a90e2;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #357abd;
+    }
+    #log-output {
+      margin-top: 20px;
+      background: #1e1e1e;
+      color: #00ff90;
+      padding: 14px;
+      border-radius: 8px;
+      font-family: monospace;
+      font-size: 13px;
+      max-height: 180px;
+      overflow-y: auto;
+      width: 320px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <h2>User Login</h2>
+    <input id="username" placeholder="Enter Username">
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div id="log-output">[ Logs will appear here... ]</div>
+
+  <script>
+    // Simulated remote logger
+    const logger = {
+      log: function(level, message, data) {
+        const timestamp = new Date().toISOString();
+        const logEntry = {
+          level: level,
+          message: message,
+          data: data,
+          timestamp: timestamp
+        };
+
+        // Display log in UI
+        const logOutput = document.getElementById("log-output");
+        logOutput.innerHTML += `<br>[${timestamp}] [${level}] ${message} | user: <b>${data.username}</b>`;
+        logOutput.scrollTop = logOutput.scrollHeight;
+
+        // Send log to remote server
+        fetch("https://httpbin.org/post", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(logEntry)
+        })
+        .then(response => response.json())
+        .then(result => {
+          console.log("Log sent to server:", result);
+        })
+        .catch(error => {
+          console.error("Failed to send log:", error);
+        });
+      }
+    };
+
+    function login() {
+      const user = document.getElementById("username").value.trim();
+
+      if (!user) {
+        alert("Please enter a username.");
+        return;
+      }
+
+      logger.log("INFO", "User Login Attempt", { username: user });
+    }
+  </script>
+
+</body>
+</html>

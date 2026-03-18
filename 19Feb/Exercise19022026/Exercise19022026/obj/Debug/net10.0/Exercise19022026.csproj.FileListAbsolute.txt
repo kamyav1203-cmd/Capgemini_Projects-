@@ -1,0 +1,14 @@
+E:\CapG\Exercise19022026\Exercise19022026\obj\Debug\net10.0\Exercise19022026.GeneratedMSBuildEditorConfig.editorconfig
+E:\CapG\Exercise19022026\Exercise19022026\obj\Debug\net10.0\Exercise19022026.AssemblyInfoInputs.cache
+E:\CapG\Exercise19022026\Exercise19022026\obj\Debug\net10.0\Exercise19022026.AssemblyInfo.cs
+E:\CapG\Exercise19022026\Exercise19022026\obj\Debug\net10.0\Exercise19022026.csproj.CoreCompileInputs.cache
+E:\CapG\Exercise19022026\Exercise19022026\bin\Debug\net10.0\Exercise19022026.exe
+E:\CapG\Exercise19022026\Exercise19022026\bin\Debug\net10.0\Exercise19022026.deps.json
+E:\CapG\Exercise19022026\Exercise19022026\bin\Debug\net10.0\Exercise19022026.runtimeconfig.json
+E:\CapG\Exercise19022026\Exercise19022026\bin\Debug\net10.0\Exercise19022026.dll
+E:\CapG\Exercise19022026\Exercise19022026\bin\Debug\net10.0\Exercise19022026.pdb
+E:\CapG\Exercise19022026\Exercise19022026\obj\Debug\net10.0\Exercise19022026.dll
+E:\CapG\Exercise19022026\Exercise19022026\obj\Debug\net10.0\refint\Exercise19022026.dll
+E:\CapG\Exercise19022026\Exercise19022026\obj\Debug\net10.0\Exercise19022026.pdb
+E:\CapG\Exercise19022026\Exercise19022026\obj\Debug\net10.0\Exercise19022026.genruntimeconfig.cache
+E:\CapG\Exercise19022026\Exercise19022026\obj\Debug\net10.0\ref\Exercise19022026.dll

@@ -1,0 +1,14 @@
+E:\CapG\OrderProcessor\OrderProcessor\bin\Debug\net10.0\OrderProcessor.exe
+E:\CapG\OrderProcessor\OrderProcessor\bin\Debug\net10.0\OrderProcessor.deps.json
+E:\CapG\OrderProcessor\OrderProcessor\bin\Debug\net10.0\OrderProcessor.runtimeconfig.json
+E:\CapG\OrderProcessor\OrderProcessor\bin\Debug\net10.0\OrderProcessor.dll
+E:\CapG\OrderProcessor\OrderProcessor\bin\Debug\net10.0\OrderProcessor.pdb
+E:\CapG\OrderProcessor\OrderProcessor\obj\Debug\net10.0\OrderProcessor.GeneratedMSBuildEditorConfig.editorconfig
+E:\CapG\OrderProcessor\OrderProcessor\obj\Debug\net10.0\OrderProcessor.AssemblyInfoInputs.cache
+E:\CapG\OrderProcessor\OrderProcessor\obj\Debug\net10.0\OrderProcessor.AssemblyInfo.cs
+E:\CapG\OrderProcessor\OrderProcessor\obj\Debug\net10.0\OrderProcessor.csproj.CoreCompileInputs.cache
+E:\CapG\OrderProcessor\OrderProcessor\obj\Debug\net10.0\OrderProcessor.dll
+E:\CapG\OrderProcessor\OrderProcessor\obj\Debug\net10.0\refint\OrderProcessor.dll
+E:\CapG\OrderProcessor\OrderProcessor\obj\Debug\net10.0\OrderProcessor.pdb
+E:\CapG\OrderProcessor\OrderProcessor\obj\Debug\net10.0\OrderProcessor.genruntimeconfig.cache
+E:\CapG\OrderProcessor\OrderProcessor\obj\Debug\net10.0\ref\OrderProcessor.dll

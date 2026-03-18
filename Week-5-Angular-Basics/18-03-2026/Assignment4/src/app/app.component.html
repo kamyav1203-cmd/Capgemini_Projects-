@@ -1,0 +1,16 @@
+<h1>Click Block Directive Demo</h1>
+
+<div>
+  <h2>Click Enabled: {{isClickEnabled}}</h2>
+  <button (click)="toggleClickEnabled()">Toggle Enable</button>
+</div>
+
+<div>
+  <button [appClickBlock]="isClickEnabled" (click)="handleClick()">
+    Click Me
+  </button>
+</div>
+
+<div>
+  <p>{{message}}</p>
+</div>

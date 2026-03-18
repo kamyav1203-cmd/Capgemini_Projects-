@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\CapG\\Exercise1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6E6DA4CD-1D8E-F7F4-FE28-6D5D755692EE}|Exercise1\\Exercise1.csproj|e:\\capg\\exercise1\\exercise1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E6DA4CD-1D8E-F7F4-FE28-6D5D755692EE}|Exercise1\\Exercise1.csproj|solutionrelative:exercise1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\CapG\\Exercise1\\Exercise1\\Program.cs",
+              "RelativeDocumentMoniker": "Exercise1\\Program.cs",
+              "ToolTip": "E:\\CapG\\Exercise1\\Exercise1\\Program.cs",
+              "RelativeToolTip": "Exercise1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T07:23:16.012Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

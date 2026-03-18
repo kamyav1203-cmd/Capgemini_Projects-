@@ -1,0 +1,79 @@
+﻿//Write a C# program that ProductId, ProductName, ProductQuantity, ProductISO(true false) , Product Expiry Date, Product price. The program should get the value input and we should declare 2 functions get and display. create instance . product display the product details
+using System;
+
+namespace Exercise4
+{
+    // Product class to store product information
+    class Product
+    {
+        // Properties to store product details
+        public int ProductId { get; set; }
+        public string ProductName { get; set; }
+        public int ProductQuantity { get; set; }
+        public bool ProductISO { get; set; }
+        public DateTime ProductExpiryDate { get; set; }
+        public decimal ProductPrice { get; set; }
+
+        // Constructor to initialize product with default data
+        public Product()
+        {
+            ProductId = 101;
+            ProductName = "Sample Product";
+            ProductQuantity = 10;
+            ProductISO = true;
+            ProductExpiryDate = DateTime.Now.AddYears(1);
+            ProductPrice = 99.99m;
+        }
+
+        // Method to get product details from user input
+        public void Get()
+        {
+            Console.Write("Enter Product ID: ");
+            ProductId = int.Parse(Console.ReadLine());
+
+            Console.Write("Enter Product Name: ");
+            ProductName = Console.ReadLine();
+
+            Console.Write("Enter Product Quantity: ");
+            ProductQuantity = int.Parse(Console.ReadLine());
+
+            Console.Write("Is Product ISO Certified? (true/false): ");
+            ProductISO = bool.Parse(Console.ReadLine());
+
+            Console.Write("Enter Product Expiry Date (yyyy-mm-dd): ");
+            ProductExpiryDate = DateTime.Parse(Console.ReadLine());
+
+            Console.Write("Enter Product Price: ");
+            ProductPrice = decimal.Parse(Console.ReadLine());
+        }
+
+        // Method to display product details
+        public void Display()
+        {
+            Console.WriteLine("\n--- Product Details ---");
+            Console.WriteLine($"Product ID: {ProductId}");
+            Console.WriteLine($"Product Name: {ProductName}");
+            Console.WriteLine($"Product Quantity: {ProductQuantity}");
+            Console.WriteLine($"Product ISO Certified: {ProductISO}");
+            Console.WriteLine($"Product Expiry Date: {ProductExpiryDate.ToShortDateString()}");
+            Console.WriteLine($"Product Price: ${ProductPrice}");
+        }
+    }
+
+    // Main Program class
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Create instance of Product (initialized with default data)
+            Product product = new Product();
+
+            // Get user input for product details
+            product.Get();
+
+            // Display the product details
+            product.Display();
+        }
+    }
+}
+

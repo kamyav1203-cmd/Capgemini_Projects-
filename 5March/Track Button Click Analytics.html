@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Track Button Click Analytics</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: #f0f2f5;
+    }
+    h2 {
+      color: #333;
+      margin-bottom: 30px;
+    }
+    .button-group {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+    button {
+      padding: 12px 28px;
+      font-size: 15px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.1s, opacity 0.2s;
+    }
+    button:active {
+      transform: scale(0.96);
+    }
+    #btn-buy {
+      background: #4a90e2;
+      color: white;
+    }
+    #btn-buy:hover { background: #357abd; }
+
+    #btn-wish {
+      background: #e25c4a;
+      color: white;
+    }
+    #btn-wish:hover { background: #c0392b; }
+
+    .stats {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 24px;
+    }
+    .stat-card {
+      background: white;
+      border-radius: 10px;
+      padding: 16px 28px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      min-width: 120px;
+    }
+    .stat-card .count {
+      font-size: 32px;
+      font-weight: bold;
+      color: #4a90e2;
+    }
+    .stat-card .label {
+      font-size: 13px;
+      color: #666;
+      margin-top: 4px;
+    }
+    #log-output {
+      background: #1e1e1e;
+      color: #7ec8e3;
+      padding: 14px;
+      border-radius: 8px;
+      font-family: monospace;
+      font-size: 13px;
+      max-height: 180px;
+      overflow-y: auto;
+      width: 420px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Product Analytics Tracker</h2>
+
+  <div class="button-group">
+    <button id="btn-buy" onclick="trackClick('Buy Now')">Buy Now</button>
+    <button id="btn-wish" onclick="trackClick('Add Wishlist')">Add Wishlist</button>
+  </div>
+
+  <div class="stats">
+    <div class="stat-card">
+      <div class="count" id="count-buy">0</div>
+      <div class="label">Buy Now Clicks</div>
+    </div>
+    <div class="stat-card">
+      <div class="count" id="count-wish">0</div>
+      <div class="label">Wishlist Clicks</div>
+    </div>
+  </div>
+
+  <div id="log-output">[ Click logs will appear here... ]</div>
+
+  <script>
+    // Click counters
+    const clickCounts = {
+      "Buy Now": 0,
+      "Add Wishlist": 0
+    };
+
+    // Counter element map
+    const counterElements = {
+      "Buy Now": document.getElementById("count-buy"),
+      "Add Wishlist": document.getElementById("count-wish")
+    };
+
+    // Simulated remote logger
+    const logger = {
+      log: function(level, message, action) {
+        const timestamp = new Date().toISOString();
+        const logEntry = {
+          level: level,
+          message: message,
+          action: action,
+          clickCount: clickCounts[action],
+          timestamp: timestamp
+        };
+
+        // Display log in UI
+        const logOutput = document.getElementById("log-output");
+        logOutput.innerHTML += `<br>[${timestamp}] [${level}] ${message} <b>${action}</b> (total: ${clickCounts[action]})`;
+        logOutput.scrollTop = logOutput.scrollHeight;
+
+        // Send log to remote server
+        fetch("https://httpbin.org/post", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(logEntry)
+        })
+        .then(response => response.json())
+        .then(result => {
+          console.log("Analytics log sent:", result);
+        })
+        .catch(error => {
+          console.error("Failed to send log:", error);
+        });
+      }
+    };
+
+    function trackClick(action) {
+      // Increment counter
+      clickCounts[action]++;
+
+      // Update stat card
+      if (counterElements[action]) {
+        counterElements[action].textContent = clickCounts[action];
+      }
+
+      // Log the action
+      logger.log("INFO", "User Action:", action);
+    }
+  </script>
+
+</body>
+</html>

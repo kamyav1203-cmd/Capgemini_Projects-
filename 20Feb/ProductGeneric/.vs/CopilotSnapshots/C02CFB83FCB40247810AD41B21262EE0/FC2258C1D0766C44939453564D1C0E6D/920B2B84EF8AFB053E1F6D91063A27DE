@@ -1,0 +1,91 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Runtime;
+using System.Runtime.CompilerServices;
+
+namespace ProductDemo
+{
+    public class Product
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public double Price { get; set; }
+        public bool IsStock { get; set; }
+    }
+    public class ProductCatalog
+    {
+        private List<Product> products;
+        public ProductCatalog()
+        {
+            //products = new List<Product>
+            //{
+            ////    new Product { Id = 100, Name = "Laptop", Description = "Electronics Item", Price = 75000, IsStock = true },
+            ////    new Product { Id = 101, Name = "Smartphone", Description = "Electronics Item", Price = 55000, IsStock = true },
+            ////    new Product { Id = 102, Name = "Desk", Description = "Furniture", Price = 5000, IsStock = false },
+            ////    new Product { Id = 103, Name = "Notebook", Description = "Furniture", Price = 750, IsStock = false },
+            //};
+            products = new List<Product>();
+            //Allow users to add data and creat an in memory collection 
+            
+        }
+        public void AddProduct()
+        {
+            Product product = new Product();
+            Console.WriteLine("Enter Product Details:");
+            Console.Write("Enter Product Id: ");
+            product.Id = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Product Name: ");
+            product.Name = Console.ReadLine();
+            Console.WriteLine("Enter Product Description: ");
+            product.Description = Console.ReadLine();
+            Console.WriteLine("Enter Product Price: ");
+            product.Price = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Is the Product in Stock? (true/false): ");
+            product.IsStock = Convert.ToBoolean(Console.ReadLine());
+            
+            products.Add(product);
+        }
+        public void DisplayProducts()
+        {
+            Console.WriteLine("\n--- Product Catalog ---");
+            if (products.Count == 0)
+            {
+                Console.WriteLine("No products in catalog.");
+            }
+            else
+            {
+                foreach (var product in products)
+                {
+                    Console.WriteLine($"Id: {product.Id}, Name: {product.Name}, Description: {product.Description}, Price: {product.Price}, In Stock: {product.IsStock}");
+                }
+            }
+        }
+    }
+    class TestProduct
+    {
+        static void Main(string[] args)
+        {
+            ProductCatalog catalog = new ProductCatalog();
+            int choice;
+            do {
+                Console.WriteLine("1. Add Product ");
+                Console.WriteLine("2. Display Products ");
+                Console.WriteLine("3. Exit ");
+                Console.WriteLine("Enter your choice: ");
+                choice = Convert.ToInt32(Console.Read());
+                switch (choice)
+                {
+                    case 1: Console.WriteLine("Adding Product..."); catalog.AddProduct(); break;
+                    case 2: Console.WriteLine("Displaying Products..."); catalog.DisplayProducts(); break;
+                    case 3: Console.WriteLine("Exiting..."); break;
+                    default: Console.WriteLine("Invalid choice. Please try again."); break;
+                }
+                } while (choice != 3);
+
+
+            catalog.DisplayProducts();
+        }
+    }
+
+}

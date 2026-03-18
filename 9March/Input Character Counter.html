@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Character Counter</title>
+</head>
+<body>
+    <textarea id="message"></textarea>
+    <p id="count">Characters: 0</p>
+
+    <script>
+        document.getElementById("message").addEventListener("keyup", (e) => {
+            let length = e.target.value.length;
+            document.getElementById("count").innerText = "Characters: " + length;
+        });
+    </script>
+</body>
+</html>

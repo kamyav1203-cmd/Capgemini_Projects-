@@ -1,0 +1,14 @@
+E:\CapG\Object\Object\bin\Debug\net10.0\Object.exe
+E:\CapG\Object\Object\bin\Debug\net10.0\Object.deps.json
+E:\CapG\Object\Object\bin\Debug\net10.0\Object.runtimeconfig.json
+E:\CapG\Object\Object\bin\Debug\net10.0\Object.dll
+E:\CapG\Object\Object\bin\Debug\net10.0\Object.pdb
+E:\CapG\Object\Object\obj\Debug\net10.0\Object.GeneratedMSBuildEditorConfig.editorconfig
+E:\CapG\Object\Object\obj\Debug\net10.0\Object.AssemblyInfoInputs.cache
+E:\CapG\Object\Object\obj\Debug\net10.0\Object.AssemblyInfo.cs
+E:\CapG\Object\Object\obj\Debug\net10.0\Object.csproj.CoreCompileInputs.cache
+E:\CapG\Object\Object\obj\Debug\net10.0\Object.dll
+E:\CapG\Object\Object\obj\Debug\net10.0\refint\Object.dll
+E:\CapG\Object\Object\obj\Debug\net10.0\Object.pdb
+E:\CapG\Object\Object\obj\Debug\net10.0\Object.genruntimeconfig.cache
+E:\CapG\Object\Object\obj\Debug\net10.0\ref\Object.dll

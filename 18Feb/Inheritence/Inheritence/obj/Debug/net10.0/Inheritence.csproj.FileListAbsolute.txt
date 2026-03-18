@@ -1,0 +1,14 @@
+E:\CapG\Inheritence\Inheritence\bin\Debug\net10.0\Inheritence.exe
+E:\CapG\Inheritence\Inheritence\bin\Debug\net10.0\Inheritence.deps.json
+E:\CapG\Inheritence\Inheritence\bin\Debug\net10.0\Inheritence.runtimeconfig.json
+E:\CapG\Inheritence\Inheritence\bin\Debug\net10.0\Inheritence.dll
+E:\CapG\Inheritence\Inheritence\bin\Debug\net10.0\Inheritence.pdb
+E:\CapG\Inheritence\Inheritence\obj\Debug\net10.0\Inheritence.GeneratedMSBuildEditorConfig.editorconfig
+E:\CapG\Inheritence\Inheritence\obj\Debug\net10.0\Inheritence.AssemblyInfoInputs.cache
+E:\CapG\Inheritence\Inheritence\obj\Debug\net10.0\Inheritence.AssemblyInfo.cs
+E:\CapG\Inheritence\Inheritence\obj\Debug\net10.0\Inheritence.csproj.CoreCompileInputs.cache
+E:\CapG\Inheritence\Inheritence\obj\Debug\net10.0\Inheritence.dll
+E:\CapG\Inheritence\Inheritence\obj\Debug\net10.0\refint\Inheritence.dll
+E:\CapG\Inheritence\Inheritence\obj\Debug\net10.0\Inheritence.pdb
+E:\CapG\Inheritence\Inheritence\obj\Debug\net10.0\Inheritence.genruntimeconfig.cache
+E:\CapG\Inheritence\Inheritence\obj\Debug\net10.0\ref\Inheritence.dll

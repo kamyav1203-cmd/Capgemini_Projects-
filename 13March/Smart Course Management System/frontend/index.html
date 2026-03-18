@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Course Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Login / Register Screen -->
+  <div id="login-screen" class="login-screen">
+    <div class="login-card">
+      <div class="login-logo">🎓</div>
+      <h1>SmartCourse</h1>
+      <p class="login-sub">Course Management System</p>
+
+      <!-- Auth Tabs -->
+      <div class="auth-tabs">
+        <button class="auth-tab active" data-auth="login">Login</button>
+        <button class="auth-tab" data-auth="register">Register</button>
+      </div>
+
+      <!-- Login Form -->
+      <div id="login-form" class="auth-form">
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="login-email" placeholder="you@example.com" />
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" id="login-password" placeholder="Enter password" />
+        </div>
+        <button class="btn btn-primary btn-block" id="login-btn">Login</button>
+        <p class="hint-text">Demo — Admin: <b>admin@smartcourse.com / Admin@123</b><br>Student: <b>alice@smartcourse.com / Student@123</b></p>
+        <p id="login-error" class="error-text hidden"></p>
+      </div>
+
+      <!-- Register Form -->
+      <div id="register-form" class="auth-form hidden">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" id="reg-name" placeholder="John Doe" />
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="reg-email" placeholder="you@example.com" />
+        </div>
+        <div class="form-group">
+          <label>Phone</label>
+          <input type="text" id="reg-phone" placeholder="9000000000" />
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" id="reg-password" placeholder="Min 6 characters" />
+        </div>
+        <div class="form-group">
+          <label>Role</label>
+          <select id="reg-role">
+            <option value="Student">Student</option>
+            <option value="Admin">Admin</option>
+          </select>
+        </div>
+        <button class="btn btn-primary btn-block" id="register-btn">Create Account</button>
+        <p id="register-error" class="error-text hidden"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main App -->
+  <div id="app" class="hidden">
+
+    <!-- Header -->
+    <header>
+      <div class="header-inner">
+        <div class="logo"><span>🎓</span><span>SmartCourse</span></div>
+        <nav id="main-nav">
+          <button class="nav-btn active" data-tab="courses">Browse Courses</button>
+          <button class="nav-btn" data-tab="enrolled">My Enrollments</button>
+          <!-- Admin tabs injected by JS -->
+        </nav>
+        <div class="header-right">
+          <div class="student-info">
+            <span class="avatar" id="user-avatar">S</span>
+            <div>
+              <div id="user-name" class="user-name"></div>
+              <div id="user-role" class="user-role"></div>
+            </div>
+          </div>
+          <button class="btn btn-logout" id="logout-btn">Logout</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- Browse Courses Tab -->
+      <section id="tab-courses" class="tab active">
+        <div class="section-header">
+          <h2>Available Courses</h2>
+          <p>Discover and enroll in courses that match your interests</p>
+        </div>
+        <div class="controls">
+          <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="search-input" placeholder="Search by course name or department..." />
+            <button id="clear-search" class="clear-btn" title="Clear">✕</button>
+          </div>
+          <div class="filter-box">
+            <label>Department:</label>
+            <select id="dept-filter"><option value="">All</option></select>
+          </div>
+        </div>
+        <div class="stats-bar"><span id="course-count"></span></div>
+        <div id="course-grid" class="course-grid"></div>
+      </section>
+
+      <!-- My Enrollments Tab -->
+      <section id="tab-enrolled" class="tab">
+        <div class="section-header">
+          <h2>My Enrollments</h2>
+          <p>Courses you are currently enrolled in</p>
+        </div>
+        <div id="enrollment-grid" class="course-grid"></div>
+      </section>
+
+      <!-- Admin: Manage Courses Tab -->
+      <section id="tab-admin-courses" class="tab">
+        <div class="section-header">
+          <h2>Manage Courses</h2>
+          <p>Add, edit, or delete courses</p>
+        </div>
+        <button class="btn btn-primary" id="add-course-btn" style="margin-bottom:20px">+ Add New Course</button>
+        <div id="admin-course-grid" class="course-grid"></div>
+      </section>
+
+      <!-- Admin: Enrollment History Tab -->
+      <section id="tab-admin-history" class="tab">
+        <div class="section-header">
+          <h2>Enrollment History</h2>
+          <p>All student enrollment records</p>
+        </div>
+        <div class="table-wrap">
+          <table id="history-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Student</th>
+                <th>Course</th>
+                <th>Department</th>
+                <th>Enrolled On</th>
+                <th>Dropped On</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="history-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="toast hidden"></div>
+
+  <!-- Modal -->
+  <div id="modal-overlay" class="modal-overlay hidden">
+    <div class="modal">
+      <button class="modal-close" id="modal-close">✕</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- api.js must be loaded first so its functions are available to app.js -->
+  <script src="api.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

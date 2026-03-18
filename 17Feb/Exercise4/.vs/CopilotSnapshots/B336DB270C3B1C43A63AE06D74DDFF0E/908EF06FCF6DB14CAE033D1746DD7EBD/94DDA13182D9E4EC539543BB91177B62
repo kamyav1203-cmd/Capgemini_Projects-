@@ -1,0 +1,3 @@
+﻿//Write a C# program that ProductId, ProductName, ProductQuantity, ProductISO(true false) , Product Expiry Date, Product price. The program should get the value input and we should declare 2 functions get and display. create instance . product display the product details
+using System;
+

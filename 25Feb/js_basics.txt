@@ -1,0 +1,21 @@
+Comments are of 2 types ->  Single line and Multi line
+
+A javascript variable is simply a name of storage location. it is of 2 types
+-local
+-global
+
+<script>
+var x = 10;
+var y = 20;
+var z = x+y;
+
+
+How to declare -> var - old way to declare a variable; function scoped
+                  let - Modern way; block scoped and can be updated
+                  const - Block scoped; cant be updated or redeclared
+Rules :
+
+Must start with letter,_,$
+no reserved words, spaces, hypen
+
+Global declared outside the function

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Todo List</h1>
+      <button id="themeToggle" title="Toggle dark mode">🌙</button>
+    </header>
+
+    <!-- Add Task -->
+    <div class="input-row">
+      <input type="text" id="taskInput" placeholder="Enter a new task..." />
+      <select id="prioritySelect">
+        <option value="1">Low</option>
+        <option value="2" selected>Medium</option>
+        <option value="3">High</option>
+      </select>
+      <button id="addBtn">Add</button>
+    </div>
+
+    <!-- Filter & Search -->
+    <div class="toolbar">
+      <input type="text" id="searchInput" placeholder="Search tasks..." />
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="active">Active</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+        <button class="filter-btn" data-filter="high">High</button>
+        <button class="filter-btn" data-filter="medium">Medium</button>
+        <button class="filter-btn" data-filter="low">Low</button>
+      </div>
+    </div>
+
+    <!-- Todo List -->
+    <ul id="todoList"></ul>
+
+    <p id="emptyMsg" class="empty-msg hidden">No tasks found.</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+E:\CapG\EmployeeData\EmployeeData\bin\Debug\net10.0\EmployeeData.exe
+E:\CapG\EmployeeData\EmployeeData\bin\Debug\net10.0\EmployeeData.deps.json
+E:\CapG\EmployeeData\EmployeeData\bin\Debug\net10.0\EmployeeData.runtimeconfig.json
+E:\CapG\EmployeeData\EmployeeData\bin\Debug\net10.0\EmployeeData.dll
+E:\CapG\EmployeeData\EmployeeData\bin\Debug\net10.0\EmployeeData.pdb
+E:\CapG\EmployeeData\EmployeeData\obj\Debug\net10.0\EmployeeData.GeneratedMSBuildEditorConfig.editorconfig
+E:\CapG\EmployeeData\EmployeeData\obj\Debug\net10.0\EmployeeData.AssemblyInfoInputs.cache
+E:\CapG\EmployeeData\EmployeeData\obj\Debug\net10.0\EmployeeData.AssemblyInfo.cs
+E:\CapG\EmployeeData\EmployeeData\obj\Debug\net10.0\EmployeeData.csproj.CoreCompileInputs.cache
+E:\CapG\EmployeeData\EmployeeData\obj\Debug\net10.0\EmployeeData.dll
+E:\CapG\EmployeeData\EmployeeData\obj\Debug\net10.0\refint\EmployeeData.dll
+E:\CapG\EmployeeData\EmployeeData\obj\Debug\net10.0\EmployeeData.pdb
+E:\CapG\EmployeeData\EmployeeData\obj\Debug\net10.0\EmployeeData.genruntimeconfig.cache
+E:\CapG\EmployeeData\EmployeeData\obj\Debug\net10.0\ref\EmployeeData.dll

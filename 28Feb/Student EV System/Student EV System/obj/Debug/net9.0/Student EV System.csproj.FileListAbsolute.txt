@@ -1,0 +1,15 @@
+E:\CapG\Student EV System\Student EV System\obj\Debug\net9.0\Student EV System.GeneratedMSBuildEditorConfig.editorconfig
+E:\CapG\Student EV System\Student EV System\obj\Debug\net9.0\Student EV System.AssemblyInfoInputs.cache
+E:\CapG\Student EV System\Student EV System\obj\Debug\net9.0\Student EV System.AssemblyInfo.cs
+E:\CapG\Student EV System\Student EV System\obj\Debug\net9.0\Student EV System.csproj.CoreCompileInputs.cache
+E:\CapG\Student EV System\Student EV System\obj\Debug\net9.0\Student EV System.sourcelink.json
+E:\CapG\Student EV System\Student EV System\bin\Debug\net9.0\Student EV System.exe
+E:\CapG\Student EV System\Student EV System\bin\Debug\net9.0\Student EV System.deps.json
+E:\CapG\Student EV System\Student EV System\bin\Debug\net9.0\Student EV System.runtimeconfig.json
+E:\CapG\Student EV System\Student EV System\bin\Debug\net9.0\Student EV System.dll
+E:\CapG\Student EV System\Student EV System\bin\Debug\net9.0\Student EV System.pdb
+E:\CapG\Student EV System\Student EV System\obj\Debug\net9.0\Student EV System.dll
+E:\CapG\Student EV System\Student EV System\obj\Debug\net9.0\refint\Student EV System.dll
+E:\CapG\Student EV System\Student EV System\obj\Debug\net9.0\Student EV System.pdb
+E:\CapG\Student EV System\Student EV System\obj\Debug\net9.0\Student EV System.genruntimeconfig.cache
+E:\CapG\Student EV System\Student EV System\obj\Debug\net9.0\ref\Student EV System.dll

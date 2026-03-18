@@ -1,0 +1,12 @@
+<h1>Price Highlight Directive Demo</h1>
+
+<h2>Product List</h2>
+<ul>
+  <li *ngFor="let product of products">
+    <span [appPriceHighlight]="product.price">
+      {{product.name}} - Price: {{product.price}}
+    </span>
+  </li>
+</ul>
+
+<p>Red = High value, Green = Normal</p>

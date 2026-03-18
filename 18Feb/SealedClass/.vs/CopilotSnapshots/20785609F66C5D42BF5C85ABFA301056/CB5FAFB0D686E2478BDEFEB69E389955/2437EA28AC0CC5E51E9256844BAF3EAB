@@ -1,0 +1,9 @@
+﻿using System.Text.RegularExpressions;
+
+class Agent: GroupAgent
+{
+    public sealed override void show()
+    {
+        Console.WriteLine("");
+    }
+}

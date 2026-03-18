@@ -1,0 +1,14 @@
+E:\CapG\SealedClass\SealedClass\bin\Debug\net10.0\SealedClass.exe
+E:\CapG\SealedClass\SealedClass\bin\Debug\net10.0\SealedClass.deps.json
+E:\CapG\SealedClass\SealedClass\bin\Debug\net10.0\SealedClass.runtimeconfig.json
+E:\CapG\SealedClass\SealedClass\bin\Debug\net10.0\SealedClass.dll
+E:\CapG\SealedClass\SealedClass\bin\Debug\net10.0\SealedClass.pdb
+E:\CapG\SealedClass\SealedClass\obj\Debug\net10.0\SealedClass.GeneratedMSBuildEditorConfig.editorconfig
+E:\CapG\SealedClass\SealedClass\obj\Debug\net10.0\SealedClass.AssemblyInfoInputs.cache
+E:\CapG\SealedClass\SealedClass\obj\Debug\net10.0\SealedClass.AssemblyInfo.cs
+E:\CapG\SealedClass\SealedClass\obj\Debug\net10.0\SealedClass.csproj.CoreCompileInputs.cache
+E:\CapG\SealedClass\SealedClass\obj\Debug\net10.0\SealedClass.dll
+E:\CapG\SealedClass\SealedClass\obj\Debug\net10.0\refint\SealedClass.dll
+E:\CapG\SealedClass\SealedClass\obj\Debug\net10.0\SealedClass.pdb
+E:\CapG\SealedClass\SealedClass\obj\Debug\net10.0\SealedClass.genruntimeconfig.cache
+E:\CapG\SealedClass\SealedClass\obj\Debug\net10.0\ref\SealedClass.dll

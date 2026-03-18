@@ -1,0 +1,15 @@
+﻿namespace ProductManagementSystem;
+
+public class Product
+{
+    public int ProductId { get; set; }
+    public string ProductName { get; set; }
+    public string Category { get; set; }
+    public decimal Price { get; set; }
+    public int Stock { get; set; }
+
+    public override string ToString()
+    {
+        return $"ID: {ProductId,-5} | Name: {ProductName,-30} | Category: {Category,-15} | Price: ${Price,-10:F2} | Stock: {Stock}";
+    }
+}

@@ -1,0 +1,14 @@
+E:\CapG\Polymorphism\Polymorphism\bin\Debug\net10.0\Polymorphism.exe
+E:\CapG\Polymorphism\Polymorphism\bin\Debug\net10.0\Polymorphism.deps.json
+E:\CapG\Polymorphism\Polymorphism\bin\Debug\net10.0\Polymorphism.runtimeconfig.json
+E:\CapG\Polymorphism\Polymorphism\bin\Debug\net10.0\Polymorphism.dll
+E:\CapG\Polymorphism\Polymorphism\bin\Debug\net10.0\Polymorphism.pdb
+E:\CapG\Polymorphism\Polymorphism\obj\Debug\net10.0\Polymorphism.GeneratedMSBuildEditorConfig.editorconfig
+E:\CapG\Polymorphism\Polymorphism\obj\Debug\net10.0\Polymorphism.AssemblyInfoInputs.cache
+E:\CapG\Polymorphism\Polymorphism\obj\Debug\net10.0\Polymorphism.AssemblyInfo.cs
+E:\CapG\Polymorphism\Polymorphism\obj\Debug\net10.0\Polymorphism.csproj.CoreCompileInputs.cache
+E:\CapG\Polymorphism\Polymorphism\obj\Debug\net10.0\Polymorphism.dll
+E:\CapG\Polymorphism\Polymorphism\obj\Debug\net10.0\refint\Polymorphism.dll
+E:\CapG\Polymorphism\Polymorphism\obj\Debug\net10.0\Polymorphism.pdb
+E:\CapG\Polymorphism\Polymorphism\obj\Debug\net10.0\Polymorphism.genruntimeconfig.cache
+E:\CapG\Polymorphism\Polymorphism\obj\Debug\net10.0\ref\Polymorphism.dll

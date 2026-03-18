@@ -1,0 +1,26 @@
+:host {
+	display: block;
+	min-height: 100vh;
+	background: linear-gradient(135deg, #dbeafe 0%, #ede9fe 50%, #fce7f3 100%);
+	padding: 2rem;
+	box-sizing: border-box;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+	max-width: 720px;
+	margin: 0 auto;
+	background: rgba(255, 255, 255, 0.75);
+	border: 1px solid rgba(255, 255, 255, 0.7);
+	backdrop-filter: blur(4px);
+	border-radius: 16px;
+	padding: 1.5rem;
+	box-shadow: 0 14px 32px rgba(79, 70, 229, 0.15);
+}
+
+h1 {
+	margin: 0 0 1rem;
+	color: #312e81;
+	font-size: 1.9rem;
+	font-weight: 700;
+}

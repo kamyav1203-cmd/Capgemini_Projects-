@@ -1,0 +1,4 @@
+E:\CapG\ArrayDemo2\ArrayDemo2\obj\Debug\net10.0\ArrayDemo2.GeneratedMSBuildEditorConfig.editorconfig
+E:\CapG\ArrayDemo2\ArrayDemo2\obj\Debug\net10.0\ArrayDemo2.AssemblyInfoInputs.cache
+E:\CapG\ArrayDemo2\ArrayDemo2\obj\Debug\net10.0\ArrayDemo2.AssemblyInfo.cs
+E:\CapG\ArrayDemo2\ArrayDemo2\obj\Debug\net10.0\ArrayDemo2.csproj.CoreCompileInputs.cache

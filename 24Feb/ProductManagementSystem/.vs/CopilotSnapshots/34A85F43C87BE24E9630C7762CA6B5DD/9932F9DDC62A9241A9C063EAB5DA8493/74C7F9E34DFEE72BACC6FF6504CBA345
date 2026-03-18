@@ -1,0 +1,341 @@
+﻿using Microsoft.Data.SqlClient;
+
+class Program
+{
+    static string connectionString = "Server=localhost;Database=ProductManagement;Trusted_Connection=True;TrustServerCertificate=True;";
+
+    static void Main(string[] args)
+    {
+        Console.WriteLine("========================================");
+        Console.WriteLine("   PRODUCT MANAGEMENT SYSTEM");
+        Console.WriteLine("========================================\n");
+
+        while (true)
+        {
+            ShowMenu();
+            string choice = Console.ReadLine();
+
+            try
+            {
+                switch (choice)
+                {
+                    case "1": ViewAllProducts(); break;
+                    case "2": AddProduct(); break;
+                    case "3": UpdateProduct(); break;
+                    case "4": DeleteProduct(); break;
+                    case "5": SearchById(); break;
+                    case "6": SearchByCategory(); break;
+                    case "7": SortProducts(); break;
+                    case "8":
+                        Console.WriteLine("\nGoodbye!");
+                        return;
+                    default:
+                        Console.WriteLine("\nInvalid choice. Try again.");
+                        break;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"\nError: {ex.Message}");
+            }
+
+            Console.WriteLine("\nPress any key to continue...");
+            Console.ReadKey();
+            Console.Clear();
+        }
+    }
+
+    static void ShowMenu()
+    {
+        Console.WriteLine("\n--- MAIN MENU ---");
+        Console.WriteLine("1. View All Products");
+        Console.WriteLine("2. Add New Product");
+        Console.WriteLine("3. Update Product");
+        Console.WriteLine("4. Delete Product");
+        Console.WriteLine("5. Search by ID");
+        Console.WriteLine("6. Search by Category");
+        Console.WriteLine("7. Sort Products");
+        Console.WriteLine("8. Exit");
+        Console.Write("\nYour choice: ");
+    }
+
+    static void ViewAllProducts()
+    {
+        Console.WriteLine("\n--- ALL PRODUCTS ---");
+
+        using var connection = new SqlConnection(connectionString);
+        connection.Open();
+
+        var command = new SqlCommand("SELECT * FROM Products", connection);
+        var reader = command.ExecuteReader();
+
+        if (!reader.HasRows)
+        {
+            Console.WriteLine("No products found.");
+            return;
+        }
+
+        Console.WriteLine("\n{0,-5} {1,-25} {2,-15} {3,-10} {4,-10}", "ID", "Name", "Category", "Price", "Stock");
+        Console.WriteLine(new string('-', 70));
+
+        while (reader.Read())
+        {
+            Console.WriteLine("{0,-5} {1,-25} {2,-15} ${3,-9:F2} {4,-10}",
+                reader["ProductId"],
+                reader["ProductName"],
+                reader["Category"],
+                reader["Price"],
+                reader["Stock"]);
+        }
+    }
+
+    static void AddProduct()
+    {
+        Console.WriteLine("\n--- ADD NEW PRODUCT ---");
+
+        Console.Write("Product Name: ");
+        string name = Console.ReadLine();
+
+        Console.Write("Category: ");
+        string category = Console.ReadLine();
+
+        Console.Write("Price: ");
+        if (!decimal.TryParse(Console.ReadLine(), out decimal price))
+        {
+            Console.WriteLine("Invalid price!");
+            return;
+        }
+
+        Console.Write("Stock: ");
+        if (!int.TryParse(Console.ReadLine(), out int stock))
+        {
+            Console.WriteLine("Invalid stock!");
+            return;
+        }
+
+        using var connection = new SqlConnection(connectionString);
+        connection.Open();
+
+        var command = new SqlCommand(
+            "INSERT INTO Products (ProductName, Category, Price, Stock) VALUES (@name, @category, @price, @stock)",
+            connection);
+
+        command.Parameters.AddWithValue("@name", name);
+        command.Parameters.AddWithValue("@category", category);
+        command.Parameters.AddWithValue("@price", price);
+        command.Parameters.AddWithValue("@stock", stock);
+        command.ExecuteNonQuery();
+
+        Console.WriteLine("\nProduct added successfully!");
+    }
+
+    static void UpdateProduct()
+    {
+        Console.WriteLine("\n--- UPDATE PRODUCT ---");
+
+        Console.Write("Enter Product ID: ");
+        if (!int.TryParse(Console.ReadLine(), out int id))
+        {
+            Console.WriteLine("Invalid ID!");
+            return;
+        }
+
+        using var connection = new SqlConnection(connectionString);
+        connection.Open();
+
+        var selectCmd = new SqlCommand("SELECT * FROM Products WHERE ProductId = @id", connection);
+        selectCmd.Parameters.AddWithValue("@id", id);
+        var reader = selectCmd.ExecuteReader();
+
+        if (!reader.Read())
+        {
+            Console.WriteLine("Product not found!");
+            return;
+        }
+
+        Console.WriteLine($"\nCurrent: {reader["ProductName"]} | {reader["Category"]} | ${reader["Price"]} | Stock: {reader["Stock"]}");
+        reader.Close();
+
+        Console.Write("\nNew Name (or Enter to skip): ");
+        string name = Console.ReadLine();
+
+        Console.Write("New Category (or Enter to skip): ");
+        string category = Console.ReadLine();
+
+        Console.Write("New Price (or Enter to skip): ");
+        string priceStr = Console.ReadLine();
+
+        Console.Write("New Stock (or Enter to skip): ");
+        string stockStr = Console.ReadLine();
+
+        var updateCmd = new SqlCommand(@"
+            UPDATE Products 
+            SET ProductName = CASE WHEN @name != '' THEN @name ELSE ProductName END,
+                Category = CASE WHEN @category != '' THEN @category ELSE Category END,
+                Price = CASE WHEN @price != 0 THEN @price ELSE Price END,
+                Stock = CASE WHEN @stock != -1 THEN @stock ELSE Stock END
+            WHERE ProductId = @id", connection);
+
+        updateCmd.Parameters.AddWithValue("@id", id);
+        updateCmd.Parameters.AddWithValue("@name", name ?? "");
+        updateCmd.Parameters.AddWithValue("@category", category ?? "");
+        updateCmd.Parameters.AddWithValue("@price", decimal.TryParse(priceStr, out decimal p) ? p : 0);
+        updateCmd.Parameters.AddWithValue("@stock", int.TryParse(stockStr, out int s) ? s : -1);
+        updateCmd.ExecuteNonQuery();
+
+        Console.WriteLine("\nProduct updated successfully!");
+    }
+
+    static void DeleteProduct()
+    {
+        Console.WriteLine("\n--- DELETE PRODUCT ---");
+
+        Console.Write("Enter Product ID: ");
+        if (!int.TryParse(Console.ReadLine(), out int id))
+        {
+            Console.WriteLine("Invalid ID!");
+            return;
+        }
+
+        using var connection = new SqlConnection(connectionString);
+        connection.Open();
+
+        var selectCmd = new SqlCommand("SELECT * FROM Products WHERE ProductId = @id", connection);
+        selectCmd.Parameters.AddWithValue("@id", id);
+        var reader = selectCmd.ExecuteReader();
+
+        if (!reader.Read())
+        {
+            Console.WriteLine("Product not found!");
+            return;
+        }
+
+        Console.WriteLine($"\nProduct: {reader["ProductName"]} | {reader["Category"]} | ${reader["Price"]}");
+        reader.Close();
+
+        Console.Write("\nAre you sure? (yes/no): ");
+        if (Console.ReadLine()?.ToLower() != "yes")
+        {
+            Console.WriteLine("Delete cancelled.");
+            return;
+        }
+
+        var deleteCmd = new SqlCommand("DELETE FROM Products WHERE ProductId = @id", connection);
+        deleteCmd.Parameters.AddWithValue("@id", id);
+        deleteCmd.ExecuteNonQuery();
+
+        Console.WriteLine("\nProduct deleted successfully!");
+    }
+
+    static void SearchById()
+    {
+        Console.WriteLine("\n--- SEARCH BY ID ---");
+
+        Console.Write("Enter Product ID: ");
+        if (!int.TryParse(Console.ReadLine(), out int id))
+        {
+            Console.WriteLine("Invalid ID!");
+            return;
+        }
+
+        using var connection = new SqlConnection(connectionString);
+        connection.Open();
+
+        var command = new SqlCommand("SELECT * FROM Products WHERE ProductId = @id", connection);
+        command.Parameters.AddWithValue("@id", id);
+        var reader = command.ExecuteReader();
+
+        if (!reader.Read())
+        {
+            Console.WriteLine("Product not found!");
+            return;
+        }
+
+        Console.WriteLine($"\nID: {reader["ProductId"]}");
+        Console.WriteLine($"Name: {reader["ProductName"]}");
+        Console.WriteLine($"Category: {reader["Category"]}");
+        Console.WriteLine($"Price: ${reader["Price"]}");
+        Console.WriteLine($"Stock: {reader["Stock"]}");
+    }
+
+    static void SearchByCategory()
+    {
+        Console.WriteLine("\n--- SEARCH BY CATEGORY ---");
+
+        Console.Write("Enter Category: ");
+        string category = Console.ReadLine();
+
+        using var connection = new SqlConnection(connectionString);
+        connection.Open();
+
+        var command = new SqlCommand("SELECT * FROM Products WHERE Category LIKE @category", connection);
+        command.Parameters.AddWithValue("@category", $"%{category}%");
+        var reader = command.ExecuteReader();
+
+        if (!reader.HasRows)
+        {
+            Console.WriteLine($"No products found in '{category}'");
+            return;
+        }
+
+        Console.WriteLine("\n{0,-5} {1,-25} {2,-15} {3,-10} {4,-10}", "ID", "Name", "Category", "Price", "Stock");
+        Console.WriteLine(new string('-', 70));
+
+        while (reader.Read())
+        {
+            Console.WriteLine("{0,-5} {1,-25} {2,-15} ${3,-9:F2} {4,-10}",
+                reader["ProductId"],
+                reader["ProductName"],
+                reader["Category"],
+                reader["Price"],
+                reader["Stock"]);
+        }
+    }
+
+    static void SortProducts()
+    {
+        Console.WriteLine("\n--- SORT PRODUCTS ---");
+        Console.WriteLine("1. By Name");
+        Console.WriteLine("2. By Category");
+        Console.WriteLine("3. By Price");
+        Console.WriteLine("4. By Stock");
+        Console.Write("\nSort by: ");
+
+        string sortField = Console.ReadLine() switch
+        {
+            "1" => "ProductName",
+            "2" => "Category",
+            "3" => "Price",
+            "4" => "Stock",
+            _ => "ProductId"
+        };
+
+        Console.Write("Order (1=Ascending, 2=Descending): ");
+        string order = Console.ReadLine() == "2" ? "DESC" : "ASC";
+
+        using var connection = new SqlConnection(connectionString);
+        connection.Open();
+
+        var command = new SqlCommand($"SELECT * FROM Products ORDER BY {sortField} {order}", connection);
+        var reader = command.ExecuteReader();
+
+        if (!reader.HasRows)
+        {
+            Console.WriteLine("No products found.");
+            return;
+        }
+
+        Console.WriteLine("\n{0,-5} {1,-25} {2,-15} {3,-10} {4,-10}", "ID", "Name", "Category", "Price", "Stock");
+        Console.WriteLine(new string('-', 70));
+
+        while (reader.Read())
+        {
+            Console.WriteLine("{0,-5} {1,-25} {2,-15} ${3,-9:F2} {4,-10}",
+                reader["ProductId"],
+                reader["ProductName"],
+                reader["Category"],
+                reader["Price"],
+                reader["Stock"]);
+        }
+    }
+}

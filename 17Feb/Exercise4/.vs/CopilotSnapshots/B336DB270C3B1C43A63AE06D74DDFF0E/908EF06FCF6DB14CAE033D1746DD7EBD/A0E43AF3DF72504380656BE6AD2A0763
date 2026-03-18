@@ -1,0 +1,55 @@
+﻿//Write a C# program that ProductId, ProductName, ProductQuantity, ProductISO(true false) , Product Expiry Date, Product price. The program should get the value input and we should declare 2 functions get and display. create instance . product display the product details
+using System;
+
+class Product
+{
+    public int ProductId { get; set; }
+    public string ProductName { get; set; }
+    public int ProductQuantity { get; set; }
+    public bool ProductISO { get; set; }
+    public DateTime ProductExpiryDate { get; set; }
+    public decimal ProductPrice { get; set; }
+
+    public void Get()
+    {
+        Console.Write("Enter Product ID: ");
+        ProductId = int.Parse(Console.ReadLine());
+
+        Console.Write("Enter Product Name: ");
+        ProductName = Console.ReadLine();
+
+        Console.Write("Enter Product Quantity: ");
+        ProductQuantity = int.Parse(Console.ReadLine());
+
+        Console.Write("Is Product ISO Certified? (true/false): ");
+        ProductISO = bool.Parse(Console.ReadLine());
+
+        Console.Write("Enter Product Expiry Date (yyyy-mm-dd): ");
+        ProductExpiryDate = DateTime.Parse(Console.ReadLine());
+
+        Console.Write("Enter Product Price: ");
+        ProductPrice = decimal.Parse(Console.ReadLine());
+    }
+
+    public void Display()
+    {
+        Console.WriteLine("\n--- Product Details ---");
+        Console.WriteLine($"Product ID: {ProductId}");
+        Console.WriteLine($"Product Name: {ProductName}");
+        Console.WriteLine($"Product Quantity: {ProductQuantity}");
+        Console.WriteLine($"Product ISO Certified: {ProductISO}");
+        Console.WriteLine($"Product Expiry Date: {ProductExpiryDate.ToShortDateString()}");
+        Console.WriteLine($"Product Price: ${ProductPrice}");
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Product product = new Product();
+        product.Get();
+        product.Display();
+    }
+}
+

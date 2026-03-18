@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Using Variable</h1>
+    <p id="outputgreeting"></p>
+    <script>
+        var greeting = "Welcome to JavaScript!";
+        console.log(greeting); // Output: Welcome to JavaScript!
+        
+        let name = "John";
+        console.log("Welcome " + name + "!"); // Output: Welcome John!
+        document.getElementById("outputgreeting").innerHTML = greeting + " "+ name; 
+        // This will set the text of an element with id "outputgreeting" to "Welcome to JavaScript, John!"
+        var company = "CAPGEMINI";
+        let location = "Bangalore";
+        const year = 2024;
+        if (true){
+            var company = "TCS";
+            let location = "Mumbai";
+            const year = 2025;
+            console.log("Inside Block:" + company + " " + location + " " + year); // Output: TCS Mumbai 2025
+        }
+        console.log("Outside Block:" + company + " " + location + " " + year); // Output: TCS Bangalore 2024
+    </script>
+</body>
+</html>

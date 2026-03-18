@@ -1,0 +1,14 @@
+E:\CapG\NullableTypes\NullableTypes\obj\Debug\net10.0\NullableTypes.GeneratedMSBuildEditorConfig.editorconfig
+E:\CapG\NullableTypes\NullableTypes\obj\Debug\net10.0\NullableTypes.AssemblyInfoInputs.cache
+E:\CapG\NullableTypes\NullableTypes\obj\Debug\net10.0\NullableTypes.AssemblyInfo.cs
+E:\CapG\NullableTypes\NullableTypes\obj\Debug\net10.0\NullableTypes.csproj.CoreCompileInputs.cache
+E:\CapG\NullableTypes\NullableTypes\bin\Debug\net10.0\NullableTypes.exe
+E:\CapG\NullableTypes\NullableTypes\bin\Debug\net10.0\NullableTypes.deps.json
+E:\CapG\NullableTypes\NullableTypes\bin\Debug\net10.0\NullableTypes.runtimeconfig.json
+E:\CapG\NullableTypes\NullableTypes\bin\Debug\net10.0\NullableTypes.dll
+E:\CapG\NullableTypes\NullableTypes\bin\Debug\net10.0\NullableTypes.pdb
+E:\CapG\NullableTypes\NullableTypes\obj\Debug\net10.0\NullableTypes.dll
+E:\CapG\NullableTypes\NullableTypes\obj\Debug\net10.0\refint\NullableTypes.dll
+E:\CapG\NullableTypes\NullableTypes\obj\Debug\net10.0\NullableTypes.pdb
+E:\CapG\NullableTypes\NullableTypes\obj\Debug\net10.0\NullableTypes.genruntimeconfig.cache
+E:\CapG\NullableTypes\NullableTypes\obj\Debug\net10.0\ref\NullableTypes.dll

@@ -1,0 +1,14 @@
+E:\CapG\DoWhile\DoWhile\bin\Debug\net10.0\DoWhile.exe
+E:\CapG\DoWhile\DoWhile\bin\Debug\net10.0\DoWhile.deps.json
+E:\CapG\DoWhile\DoWhile\bin\Debug\net10.0\DoWhile.runtimeconfig.json
+E:\CapG\DoWhile\DoWhile\bin\Debug\net10.0\DoWhile.dll
+E:\CapG\DoWhile\DoWhile\bin\Debug\net10.0\DoWhile.pdb
+E:\CapG\DoWhile\DoWhile\obj\Debug\net10.0\DoWhile.GeneratedMSBuildEditorConfig.editorconfig
+E:\CapG\DoWhile\DoWhile\obj\Debug\net10.0\DoWhile.AssemblyInfoInputs.cache
+E:\CapG\DoWhile\DoWhile\obj\Debug\net10.0\DoWhile.AssemblyInfo.cs
+E:\CapG\DoWhile\DoWhile\obj\Debug\net10.0\DoWhile.csproj.CoreCompileInputs.cache
+E:\CapG\DoWhile\DoWhile\obj\Debug\net10.0\DoWhile.dll
+E:\CapG\DoWhile\DoWhile\obj\Debug\net10.0\refint\DoWhile.dll
+E:\CapG\DoWhile\DoWhile\obj\Debug\net10.0\DoWhile.pdb
+E:\CapG\DoWhile\DoWhile\obj\Debug\net10.0\DoWhile.genruntimeconfig.cache
+E:\CapG\DoWhile\DoWhile\obj\Debug\net10.0\ref\DoWhile.dll

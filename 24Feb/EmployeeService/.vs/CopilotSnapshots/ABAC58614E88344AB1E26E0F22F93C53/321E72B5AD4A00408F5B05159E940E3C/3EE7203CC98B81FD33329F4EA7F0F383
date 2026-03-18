@@ -1,0 +1,270 @@
+﻿using System;
+using System.Data.SqlClient;
+
+namespace EmployeeManagement
+{
+    class Program
+    {
+        private string connectionstring =
+            "Server=(localdb)\\MSSQLLocalDB;Database=EmployeeDB;Trusted_Connection=True;";
+
+        public void run()
+        {
+            while (true)
+            {
+                Console.Clear();
+                Console.WriteLine("====Employee Management System===");
+                Console.WriteLine("1. View All Employee");
+                Console.WriteLine("2. Insert Employee");
+                Console.WriteLine("3. Update Employee");
+                Console.WriteLine("4. Delete Employee");
+                Console.WriteLine("5. Search by Employee ID");
+                Console.WriteLine("6. Search by Department Name");
+                Console.WriteLine("7. Exit");
+                Console.Write("Enter the Choice: ");
+
+                int choice = Convert.ToInt32(Console.ReadLine());
+
+                switch (choice)
+                {
+                    case 1:
+                        viewEmployee();
+                        break;
+                    case 2:
+                        insertEmployee();
+                        break;
+                    case 3:
+                        updateEmployee();
+                        break;
+                    case 4:
+                        deleteEmployee();
+                        break;
+                    case 5:
+                        searchById();
+                        break;
+                    case 6:
+                        searchByDepartment();
+                        break;
+                    case 7:
+                        return;
+                    default:
+                        Console.WriteLine("Invalid Choice!!");
+                        break;
+                }
+
+                Console.WriteLine("\nPress Enter to continue");
+                Console.ReadLine();
+            }
+        }
+
+        public void viewEmployee()
+        {
+            try
+            {
+                using SqlConnection conn = new SqlConnection(connectionstring);
+                conn.Open();
+
+                string query = "SELECT Id, Name, Department, Salary FROM dbo.Employees";
+                using SqlCommand cmd = new SqlCommand(query, conn);
+                using SqlDataReader reader = cmd.ExecuteReader();
+
+                Console.WriteLine("------Employee List------");
+
+                while (reader.Read())
+                {
+                    Console.WriteLine($"{reader.GetInt32(0)} " +
+                                      $"{reader.GetString(1)} " +
+                                      $"{reader.GetString(2)} " +
+                                      $"{reader.GetDouble(3)}");
+                }
+            }
+            catch (SqlException ex)
+            {
+                Console.WriteLine($"Database error: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred: {ex.Message}");
+            }
+        }
+
+        public void insertEmployee()
+        {
+            Console.Write("Enter Name: ");
+            string name = Console.ReadLine();
+
+            Console.Write("Enter Department: ");
+            string dept = Console.ReadLine();
+
+            Console.Write("Enter Salary: ");
+            double salary = Convert.ToDouble(Console.ReadLine());
+
+            using SqlConnection conn = new SqlConnection(connectionstring);
+            conn.Open();
+
+            string query = "INSERT INTO dbo.Employees (Name, Department, Salary) VALUES (@name, @dept, @salary)";
+            using SqlCommand cmd = new SqlCommand(query, conn);
+
+            cmd.Parameters.AddWithValue("@name", name);
+            cmd.Parameters.AddWithValue("@dept", dept);
+            cmd.Parameters.AddWithValue("@salary", salary);
+
+            cmd.ExecuteNonQuery();
+
+            Console.WriteLine("Employee inserted successfully!");
+        }
+
+        public void updateEmployee()
+        {
+            try
+            {
+                Console.Write("Enter Employee ID to update: ");
+                string? idInput = Console.ReadLine();
+                if (string.IsNullOrWhiteSpace(idInput))
+                {
+                    Console.WriteLine("Employee ID cannot be empty!");
+                    return;
+                }
+                int id = Convert.ToInt32(idInput);
+
+                Console.Write("Enter New Name: ");
+                string? name = Console.ReadLine();
+                if (string.IsNullOrWhiteSpace(name))
+                {
+                    Console.WriteLine("Name cannot be empty!");
+                    return;
+                }
+
+                Console.Write("Enter New Department: ");
+                string? dept = Console.ReadLine();
+                if (string.IsNullOrWhiteSpace(dept))
+                {
+                    Console.WriteLine("Department cannot be empty!");
+                    return;
+                }
+
+                Console.Write("Enter New Salary: ");
+                string? salaryInput = Console.ReadLine();
+                if (string.IsNullOrWhiteSpace(salaryInput))
+                {
+                    Console.WriteLine("Salary cannot be empty!");
+                    return;
+                }
+                double salary = Convert.ToDouble(salaryInput);
+
+                using SqlConnection conn = new SqlConnection(connectionstring);
+                conn.Open();
+
+                string query = @"UPDATE dbo.Employees 
+                             SET Name=@name, Department=@dept, Salary=@salary 
+                             WHERE Id=@id";
+
+                using SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Parameters.AddWithValue("@name", name);
+                cmd.Parameters.AddWithValue("@dept", dept);
+                cmd.Parameters.AddWithValue("@salary", salary);
+
+                int rows = cmd.ExecuteNonQuery();
+
+                Console.WriteLine(rows > 0
+                    ? "Employee updated successfully!"
+                    : "Employee not found!");
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Invalid input format! Please enter valid numbers.");
+            }
+            catch (SqlException ex)
+            {
+                Console.WriteLine($"Database error: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred: {ex.Message}");
+            }
+        }
+
+        public void deleteEmployee()
+        {
+            Console.Write("Enter Employee ID to delete: ");
+            int id = Convert.ToInt32(Console.ReadLine());
+
+            using SqlConnection conn = new SqlConnection(connectionstring);
+            conn.Open();
+
+            string query = "DELETE FROM dbo.Employees WHERE Id=@id";
+            using SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@id", id);
+
+            int rows = cmd.ExecuteNonQuery();
+
+            Console.WriteLine(rows > 0
+                ? "Employee deleted successfully!"
+                : "Employee not found!");
+        }
+
+        public void searchById()
+        {
+            Console.Write("Enter Employee ID: ");
+            int id = Convert.ToInt32(Console.ReadLine());
+
+            using SqlConnection conn = new SqlConnection(connectionstring);
+            conn.Open();
+
+            string query = "SELECT Id, Name, Department, Salary FROM dbo.Employees WHERE Id=@id";
+            using SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@id", id);
+
+            using SqlDataReader reader = cmd.ExecuteReader();
+
+            if (reader.Read())
+            {
+                Console.WriteLine($"{reader.GetInt32(0)} " +
+                                  $"{reader.GetString(1)} " +
+                                  $"{reader.GetString(2)} " +
+                                  $"{reader.GetDouble(3)}");
+            }
+            else
+            {
+                Console.WriteLine("Employee not found!");
+            }
+        }
+
+        public void searchByDepartment()
+        {
+            Console.Write("Enter Department Name: ");
+            string dept = Console.ReadLine();
+
+            using SqlConnection conn = new SqlConnection(connectionstring);
+            conn.Open();
+
+            string query = "SELECT Id, Name, Department, Salary FROM dbo.Employees WHERE Department=@dept";
+            using SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@dept", dept);
+
+            using SqlDataReader reader = cmd.ExecuteReader();
+
+            Console.WriteLine("------Employees in Department------");
+
+            bool found = false;
+            while (reader.Read())
+            {
+                found = true;
+                Console.WriteLine($"{reader.GetInt32(0)} " +
+                                  $"{reader.GetString(1)} " +
+                                  $"{reader.GetString(2)} " +
+                                  $"{reader.GetDouble(3)}");
+            }
+
+            if (!found)
+                Console.WriteLine("No employees found in this department!");
+        }
+
+        static void Main(string[] args)
+        {
+            Program p = new Program();
+            p.run();
+        }
+    }
+}

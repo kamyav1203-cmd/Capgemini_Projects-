@@ -1,0 +1,14 @@
+E:\CapG\ProductGeneric\ProductGeneric\bin\Debug\net10.0\ProductGeneric.exe
+E:\CapG\ProductGeneric\ProductGeneric\bin\Debug\net10.0\ProductGeneric.deps.json
+E:\CapG\ProductGeneric\ProductGeneric\bin\Debug\net10.0\ProductGeneric.runtimeconfig.json
+E:\CapG\ProductGeneric\ProductGeneric\bin\Debug\net10.0\ProductGeneric.dll
+E:\CapG\ProductGeneric\ProductGeneric\bin\Debug\net10.0\ProductGeneric.pdb
+E:\CapG\ProductGeneric\ProductGeneric\obj\Debug\net10.0\ProductGeneric.GeneratedMSBuildEditorConfig.editorconfig
+E:\CapG\ProductGeneric\ProductGeneric\obj\Debug\net10.0\ProductGeneric.AssemblyInfoInputs.cache
+E:\CapG\ProductGeneric\ProductGeneric\obj\Debug\net10.0\ProductGeneric.AssemblyInfo.cs
+E:\CapG\ProductGeneric\ProductGeneric\obj\Debug\net10.0\ProductGeneric.csproj.CoreCompileInputs.cache
+E:\CapG\ProductGeneric\ProductGeneric\obj\Debug\net10.0\ProductGeneric.dll
+E:\CapG\ProductGeneric\ProductGeneric\obj\Debug\net10.0\refint\ProductGeneric.dll
+E:\CapG\ProductGeneric\ProductGeneric\obj\Debug\net10.0\ProductGeneric.pdb
+E:\CapG\ProductGeneric\ProductGeneric\obj\Debug\net10.0\ProductGeneric.genruntimeconfig.cache
+E:\CapG\ProductGeneric\ProductGeneric\obj\Debug\net10.0\ref\ProductGeneric.dll

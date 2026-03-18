@@ -1,0 +1,14 @@
+E:\CapG\BoxingUnboxing\BoxingUnboxing\bin\Debug\net10.0\BoxingUnboxing.exe
+E:\CapG\BoxingUnboxing\BoxingUnboxing\bin\Debug\net10.0\BoxingUnboxing.deps.json
+E:\CapG\BoxingUnboxing\BoxingUnboxing\bin\Debug\net10.0\BoxingUnboxing.runtimeconfig.json
+E:\CapG\BoxingUnboxing\BoxingUnboxing\bin\Debug\net10.0\BoxingUnboxing.dll
+E:\CapG\BoxingUnboxing\BoxingUnboxing\bin\Debug\net10.0\BoxingUnboxing.pdb
+E:\CapG\BoxingUnboxing\BoxingUnboxing\obj\Debug\net10.0\BoxingUnboxing.GeneratedMSBuildEditorConfig.editorconfig
+E:\CapG\BoxingUnboxing\BoxingUnboxing\obj\Debug\net10.0\BoxingUnboxing.AssemblyInfoInputs.cache
+E:\CapG\BoxingUnboxing\BoxingUnboxing\obj\Debug\net10.0\BoxingUnboxing.AssemblyInfo.cs
+E:\CapG\BoxingUnboxing\BoxingUnboxing\obj\Debug\net10.0\BoxingUnboxing.csproj.CoreCompileInputs.cache
+E:\CapG\BoxingUnboxing\BoxingUnboxing\obj\Debug\net10.0\BoxingUnboxing.dll
+E:\CapG\BoxingUnboxing\BoxingUnboxing\obj\Debug\net10.0\refint\BoxingUnboxing.dll
+E:\CapG\BoxingUnboxing\BoxingUnboxing\obj\Debug\net10.0\BoxingUnboxing.pdb
+E:\CapG\BoxingUnboxing\BoxingUnboxing\obj\Debug\net10.0\BoxingUnboxing.genruntimeconfig.cache
+E:\CapG\BoxingUnboxing\BoxingUnboxing\obj\Debug\net10.0\ref\BoxingUnboxing.dll

@@ -1,0 +1,14 @@
+E:\CapG\SortStringArray\SortStringArray\bin\Debug\net10.0\SortStringArray.exe
+E:\CapG\SortStringArray\SortStringArray\bin\Debug\net10.0\SortStringArray.deps.json
+E:\CapG\SortStringArray\SortStringArray\bin\Debug\net10.0\SortStringArray.runtimeconfig.json
+E:\CapG\SortStringArray\SortStringArray\bin\Debug\net10.0\SortStringArray.dll
+E:\CapG\SortStringArray\SortStringArray\bin\Debug\net10.0\SortStringArray.pdb
+E:\CapG\SortStringArray\SortStringArray\obj\Debug\net10.0\SortStringArray.GeneratedMSBuildEditorConfig.editorconfig
+E:\CapG\SortStringArray\SortStringArray\obj\Debug\net10.0\SortStringArray.AssemblyInfoInputs.cache
+E:\CapG\SortStringArray\SortStringArray\obj\Debug\net10.0\SortStringArray.AssemblyInfo.cs
+E:\CapG\SortStringArray\SortStringArray\obj\Debug\net10.0\SortStringArray.csproj.CoreCompileInputs.cache
+E:\CapG\SortStringArray\SortStringArray\obj\Debug\net10.0\SortStringArray.dll
+E:\CapG\SortStringArray\SortStringArray\obj\Debug\net10.0\refint\SortStringArray.dll
+E:\CapG\SortStringArray\SortStringArray\obj\Debug\net10.0\SortStringArray.pdb
+E:\CapG\SortStringArray\SortStringArray\obj\Debug\net10.0\SortStringArray.genruntimeconfig.cache
+E:\CapG\SortStringArray\SortStringArray\obj\Debug\net10.0\ref\SortStringArray.dll

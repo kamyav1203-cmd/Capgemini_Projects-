@@ -1,0 +1,14 @@
+E:\CapG\If-else-statement\If-else-statement\bin\Debug\net10.0\If-else-statement.exe
+E:\CapG\If-else-statement\If-else-statement\bin\Debug\net10.0\If-else-statement.deps.json
+E:\CapG\If-else-statement\If-else-statement\bin\Debug\net10.0\If-else-statement.runtimeconfig.json
+E:\CapG\If-else-statement\If-else-statement\bin\Debug\net10.0\If-else-statement.dll
+E:\CapG\If-else-statement\If-else-statement\bin\Debug\net10.0\If-else-statement.pdb
+E:\CapG\If-else-statement\If-else-statement\obj\Debug\net10.0\If-else-statement.GeneratedMSBuildEditorConfig.editorconfig
+E:\CapG\If-else-statement\If-else-statement\obj\Debug\net10.0\If-else-statement.AssemblyInfoInputs.cache
+E:\CapG\If-else-statement\If-else-statement\obj\Debug\net10.0\If-else-statement.AssemblyInfo.cs
+E:\CapG\If-else-statement\If-else-statement\obj\Debug\net10.0\If-else-statement.csproj.CoreCompileInputs.cache
+E:\CapG\If-else-statement\If-else-statement\obj\Debug\net10.0\If-else-statement.dll
+E:\CapG\If-else-statement\If-else-statement\obj\Debug\net10.0\refint\If-else-statement.dll
+E:\CapG\If-else-statement\If-else-statement\obj\Debug\net10.0\If-else-statement.pdb
+E:\CapG\If-else-statement\If-else-statement\obj\Debug\net10.0\If-else-statement.genruntimeconfig.cache
+E:\CapG\If-else-statement\If-else-statement\obj\Debug\net10.0\ref\If-else-statement.dll

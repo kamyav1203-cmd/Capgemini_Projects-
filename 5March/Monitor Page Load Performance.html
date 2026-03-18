@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Monitor Page Load Performance</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: #f0f2f5;
+    }
+    h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .card {
+      background: white;
+      padding: 36px 48px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    .load-time {
+      font-size: 48px;
+      font-weight: bold;
+      color: #4a90e2;
+    }
+    .load-label {
+      font-size: 14px;
+      color: #888;
+      margin-top: 6px;
+    }
+    .status-badge {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 6px 18px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+    .fast  { background: #d4edda; color: #155724; }
+    .okay  { background: #fff3cd; color: #856404; }
+    .slow  { background: #f8d7da; color: #721c24; }
+    #log-output {
+      background: #1e1e1e;
+      color: #90ee90;
+      padding: 14px;
+      border-radius: 8px;
+      font-family: monospace;
+      font-size: 13px;
+      max-height: 160px;
+      overflow-y: auto;
+      width: 420px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Page Load Performance Monitor</h2>
+
+  <div class="card">
+    <div class="load-time" id="load-time-display">--</div>
+    <div class="load-label">milliseconds to load</div>
+    <span class="status-badge" id="status-badge">Measuring...</span>
+  </div>
+
+  <div id="log-output">[ Performance logs will appear here... ]</div>
+
+  <script>
+    // Start timer as early as possible
+    const start = performance.now();
+
+    // Simulated remote logger
+    const logger = {
+      log: function(level, message, value) {
+        const timestamp = new Date().toISOString();
+        const logEntry = {
+          level: level,
+          message: message,
+          loadTime: value,
+          timestamp: timestamp
+        };
+
+        // Display log in UI
+        const logOutput = document.getElementById("log-output");
+        logOutput.innerHTML += `<br>[${timestamp}] [${level}] ${message} <b>${value}</b>`;
+        logOutput.scrollTop = logOutput.scrollHeight;
+
+        // Send log to remote server
+        fetch("https://httpbin.org/post", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(logEntry)
+        })
+        .then(response => response.json())
+        .then(result => {
+          console.log("Performance log sent:", result);
+        })
+        .catch(error => {
+          console.error("Failed to send log:", error);
+        });
+      }
+    };
+
+    window.onload = function() {
+      const end = performance.now();
+      const loadTime = (end - start).toFixed(2);
+
+      // Log the page load time
+      logger.log("INFO", "Page Load Time:", loadTime + " ms");
+
+      // Update display card
+      document.getElementById("load-time-display").textContent = loadTime;
+
+      // Set performance badge
+      const badge = document.getElementById("status-badge");
+      if (loadTime < 200) {
+        badge.textContent = "Fast";
+        badge.className = "status-badge fast";
+      } else if (loadTime < 1000) {
+        badge.textContent = "Okay";
+        badge.className = "status-badge okay";
+      } else {
+        badge.textContent = "Slow";
+        badge.className = "status-badge slow";
+      }
+    };
+  </script>
+
+</body>
+</html>

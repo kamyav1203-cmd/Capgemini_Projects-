@@ -1,0 +1,14 @@
+E:\CapG\Interface\Interface\bin\Debug\net10.0\Interface.exe
+E:\CapG\Interface\Interface\bin\Debug\net10.0\Interface.deps.json
+E:\CapG\Interface\Interface\bin\Debug\net10.0\Interface.runtimeconfig.json
+E:\CapG\Interface\Interface\bin\Debug\net10.0\Interface.dll
+E:\CapG\Interface\Interface\bin\Debug\net10.0\Interface.pdb
+E:\CapG\Interface\Interface\obj\Debug\net10.0\Interface.GeneratedMSBuildEditorConfig.editorconfig
+E:\CapG\Interface\Interface\obj\Debug\net10.0\Interface.AssemblyInfoInputs.cache
+E:\CapG\Interface\Interface\obj\Debug\net10.0\Interface.AssemblyInfo.cs
+E:\CapG\Interface\Interface\obj\Debug\net10.0\Interface.csproj.CoreCompileInputs.cache
+E:\CapG\Interface\Interface\obj\Debug\net10.0\Interface.dll
+E:\CapG\Interface\Interface\obj\Debug\net10.0\refint\Interface.dll
+E:\CapG\Interface\Interface\obj\Debug\net10.0\Interface.pdb
+E:\CapG\Interface\Interface\obj\Debug\net10.0\Interface.genruntimeconfig.cache
+E:\CapG\Interface\Interface\obj\Debug\net10.0\ref\Interface.dll

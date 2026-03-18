@@ -1,0 +1,14 @@
+E:\CapG\ArrayDemo1\ArrayDemo1\bin\Debug\net10.0\ArrayDemo1.exe
+E:\CapG\ArrayDemo1\ArrayDemo1\bin\Debug\net10.0\ArrayDemo1.deps.json
+E:\CapG\ArrayDemo1\ArrayDemo1\bin\Debug\net10.0\ArrayDemo1.runtimeconfig.json
+E:\CapG\ArrayDemo1\ArrayDemo1\bin\Debug\net10.0\ArrayDemo1.dll
+E:\CapG\ArrayDemo1\ArrayDemo1\bin\Debug\net10.0\ArrayDemo1.pdb
+E:\CapG\ArrayDemo1\ArrayDemo1\obj\Debug\net10.0\ArrayDemo1.GeneratedMSBuildEditorConfig.editorconfig
+E:\CapG\ArrayDemo1\ArrayDemo1\obj\Debug\net10.0\ArrayDemo1.AssemblyInfoInputs.cache
+E:\CapG\ArrayDemo1\ArrayDemo1\obj\Debug\net10.0\ArrayDemo1.AssemblyInfo.cs
+E:\CapG\ArrayDemo1\ArrayDemo1\obj\Debug\net10.0\ArrayDemo1.csproj.CoreCompileInputs.cache
+E:\CapG\ArrayDemo1\ArrayDemo1\obj\Debug\net10.0\ArrayDemo1.dll
+E:\CapG\ArrayDemo1\ArrayDemo1\obj\Debug\net10.0\refint\ArrayDemo1.dll
+E:\CapG\ArrayDemo1\ArrayDemo1\obj\Debug\net10.0\ArrayDemo1.pdb
+E:\CapG\ArrayDemo1\ArrayDemo1\obj\Debug\net10.0\ArrayDemo1.genruntimeconfig.cache
+E:\CapG\ArrayDemo1\ArrayDemo1\obj\Debug\net10.0\ref\ArrayDemo1.dll

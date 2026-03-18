@@ -1,0 +1,14 @@
+E:\CapG\ExceptionHandling\ExceptionHandling\bin\Debug\net10.0\ExceptionHandling.exe
+E:\CapG\ExceptionHandling\ExceptionHandling\bin\Debug\net10.0\ExceptionHandling.deps.json
+E:\CapG\ExceptionHandling\ExceptionHandling\bin\Debug\net10.0\ExceptionHandling.runtimeconfig.json
+E:\CapG\ExceptionHandling\ExceptionHandling\bin\Debug\net10.0\ExceptionHandling.dll
+E:\CapG\ExceptionHandling\ExceptionHandling\bin\Debug\net10.0\ExceptionHandling.pdb
+E:\CapG\ExceptionHandling\ExceptionHandling\obj\Debug\net10.0\ExceptionHandling.GeneratedMSBuildEditorConfig.editorconfig
+E:\CapG\ExceptionHandling\ExceptionHandling\obj\Debug\net10.0\ExceptionHandling.AssemblyInfoInputs.cache
+E:\CapG\ExceptionHandling\ExceptionHandling\obj\Debug\net10.0\ExceptionHandling.AssemblyInfo.cs
+E:\CapG\ExceptionHandling\ExceptionHandling\obj\Debug\net10.0\ExceptionHandling.csproj.CoreCompileInputs.cache
+E:\CapG\ExceptionHandling\ExceptionHandling\obj\Debug\net10.0\ExceptionHandling.dll
+E:\CapG\ExceptionHandling\ExceptionHandling\obj\Debug\net10.0\refint\ExceptionHandling.dll
+E:\CapG\ExceptionHandling\ExceptionHandling\obj\Debug\net10.0\ExceptionHandling.pdb
+E:\CapG\ExceptionHandling\ExceptionHandling\obj\Debug\net10.0\ExceptionHandling.genruntimeconfig.cache
+E:\CapG\ExceptionHandling\ExceptionHandling\obj\Debug\net10.0\ref\ExceptionHandling.dll

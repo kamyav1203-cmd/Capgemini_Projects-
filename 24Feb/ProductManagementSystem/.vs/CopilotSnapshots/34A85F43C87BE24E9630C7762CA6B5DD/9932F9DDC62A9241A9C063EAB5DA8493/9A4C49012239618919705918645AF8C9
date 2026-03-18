@@ -1,0 +1,329 @@
+﻿using ProductManagementSystem;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        string connectionString = "Server=localhost;Database=ProductManagement;Trusted_Connection=True;TrustServerCertificate=True;";
+        var repository = new ProductRepository(connectionString);
+
+        Console.WriteLine("╔═══════════════════════════════════════════════╗");
+        Console.WriteLine("║   PRODUCT MANAGEMENT SYSTEM - SQL SERVER     ║");
+        Console.WriteLine("╚═══════════════════════════════════════════════╝\n");
+
+        bool exit = false;
+
+        while (!exit)
+        {
+            DisplayMenu();
+            string choice = Console.ReadLine();
+
+            try
+            {
+                switch (choice)
+                {
+                    case "1":
+                        ViewAllProducts(repository);
+                        break;
+                    case "2":
+                        InsertProduct(repository);
+                        break;
+                    case "3":
+                        UpdateProduct(repository);
+                        break;
+                    case "4":
+                        DeleteProduct(repository);
+                        break;
+                    case "5":
+                        SearchProductById(repository);
+                        break;
+                    case "6":
+                        SearchProductByCategory(repository);
+                        break;
+                    case "7":
+                        SortProducts(repository);
+                        break;
+                    case "8":
+                        exit = true;
+                        Console.WriteLine("\n✓ Exiting Product Management System. Goodbye!");
+                        break;
+                    default:
+                        Console.WriteLine("\n✗ Invalid choice. Please try again.");
+                        break;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"\n✗ Error: {ex.Message}");
+            }
+
+            if (!exit)
+            {
+                Console.WriteLine("\nPress any key to continue...");
+                Console.ReadKey();
+                Console.Clear();
+            }
+        }
+    }
+
+    static void DisplayMenu()
+    {
+        Console.WriteLine("\n┌─────────────────────────────────────────────┐");
+        Console.WriteLine("│              MAIN MENU                      │");
+        Console.WriteLine("├─────────────────────────────────────────────┤");
+        Console.WriteLine("│ 1. View All Products                        │");
+        Console.WriteLine("│ 2. Insert New Product                       │");
+        Console.WriteLine("│ 3. Update Product                           │");
+        Console.WriteLine("│ 4. Delete Product                           │");
+        Console.WriteLine("│ 5. Search Product by ID                     │");
+        Console.WriteLine("│ 6. Search Product by Category               │");
+        Console.WriteLine("│ 7. Sort Products                            │");
+        Console.WriteLine("│ 8. Exit                                     │");
+        Console.WriteLine("└─────────────────────────────────────────────┘");
+        Console.Write("\nEnter your choice: ");
+    }
+
+    static void ViewAllProducts(ProductRepository repository)
+    {
+        Console.WriteLine("\n═══════════════════════ ALL PRODUCTS ═══════════════════════");
+        var products = repository.GetAllProducts();
+
+        if (products.Count == 0)
+        {
+            Console.WriteLine("No products found in the database.");
+            return;
+        }
+
+        Console.WriteLine(new string('─', 100));
+        foreach (var product in products)
+        {
+            Console.WriteLine(product);
+        }
+        Console.WriteLine(new string('─', 100));
+        Console.WriteLine($"Total Products: {products.Count}");
+    }
+
+    static void InsertProduct(ProductRepository repository)
+    {
+        Console.WriteLine("\n═══════════════════════ INSERT PRODUCT ═══════════════════════");
+
+        Console.Write("Enter Product Name: ");
+        string name = Console.ReadLine();
+
+        Console.Write("Enter Category: ");
+        string category = Console.ReadLine();
+
+        Console.Write("Enter Price: ");
+        if (!decimal.TryParse(Console.ReadLine(), out decimal price))
+        {
+            Console.WriteLine("✗ Invalid price format.");
+            return;
+        }
+
+        Console.Write("Enter Stock Quantity: ");
+        if (!int.TryParse(Console.ReadLine(), out int stock))
+        {
+            Console.WriteLine("✗ Invalid stock format.");
+            return;
+        }
+
+        var product = new Product
+        {
+            ProductName = name,
+            Category = category,
+            Price = price,
+            Stock = stock
+        };
+
+        repository.InsertProduct(product);
+        Console.WriteLine("\n✓ Product inserted successfully!");
+    }
+
+    static void UpdateProduct(ProductRepository repository)
+    {
+        Console.WriteLine("\n═══════════════════════ UPDATE PRODUCT ═══════════════════════");
+
+        Console.Write("Enter Product ID to update: ");
+        if (!int.TryParse(Console.ReadLine(), out int id))
+        {
+            Console.WriteLine("✗ Invalid ID format.");
+            return;
+        }
+
+        var existingProduct = repository.GetProductById(id);
+        if (existingProduct == null)
+        {
+            Console.WriteLine("✗ Product not found.");
+            return;
+        }
+
+        Console.WriteLine("\nCurrent Product Details:");
+        Console.WriteLine(existingProduct);
+
+        Console.Write("\nEnter New Product Name (or press Enter to keep current): ");
+        string name = Console.ReadLine();
+        if (string.IsNullOrWhiteSpace(name))
+            name = existingProduct.ProductName;
+
+        Console.Write("Enter New Category (or press Enter to keep current): ");
+        string category = Console.ReadLine();
+        if (string.IsNullOrWhiteSpace(category))
+            category = existingProduct.Category;
+
+        Console.Write("Enter New Price (or press Enter to keep current): ");
+        string priceInput = Console.ReadLine();
+        decimal price = existingProduct.Price;
+        if (!string.IsNullOrWhiteSpace(priceInput) && !decimal.TryParse(priceInput, out price))
+        {
+            Console.WriteLine("✗ Invalid price format.");
+            return;
+        }
+
+        Console.Write("Enter New Stock Quantity (or press Enter to keep current): ");
+        string stockInput = Console.ReadLine();
+        int stock = existingProduct.Stock;
+        if (!string.IsNullOrWhiteSpace(stockInput) && !int.TryParse(stockInput, out stock))
+        {
+            Console.WriteLine("✗ Invalid stock format.");
+            return;
+        }
+
+        var updatedProduct = new Product
+        {
+            ProductId = id,
+            ProductName = name,
+            Category = category,
+            Price = price,
+            Stock = stock
+        };
+
+        repository.UpdateProduct(updatedProduct);
+        Console.WriteLine("\n✓ Product updated successfully!");
+    }
+
+    static void DeleteProduct(ProductRepository repository)
+    {
+        Console.WriteLine("\n═══════════════════════ DELETE PRODUCT ═══════════════════════");
+
+        Console.Write("Enter Product ID to delete: ");
+        if (!int.TryParse(Console.ReadLine(), out int id))
+        {
+            Console.WriteLine("✗ Invalid ID format.");
+            return;
+        }
+
+        var product = repository.GetProductById(id);
+        if (product == null)
+        {
+            Console.WriteLine("✗ Product not found.");
+            return;
+        }
+
+        Console.WriteLine("\nProduct to be deleted:");
+        Console.WriteLine(product);
+
+        Console.Write("\nAre you sure you want to delete this product? (yes/no): ");
+        string confirmation = Console.ReadLine().ToLower();
+
+        if (confirmation == "yes" || confirmation == "y")
+        {
+            repository.DeleteProduct(id);
+            Console.WriteLine("\n✓ Product deleted successfully!");
+        }
+        else
+        {
+            Console.WriteLine("\n✗ Delete operation cancelled.");
+        }
+    }
+
+    static void SearchProductById(ProductRepository repository)
+    {
+        Console.WriteLine("\n═══════════════════════ SEARCH BY ID ═══════════════════════");
+
+        Console.Write("Enter Product ID: ");
+        if (!int.TryParse(Console.ReadLine(), out int id))
+        {
+            Console.WriteLine("✗ Invalid ID format.");
+            return;
+        }
+
+        var product = repository.GetProductById(id);
+        if (product == null)
+        {
+            Console.WriteLine("\n✗ Product not found.");
+            return;
+        }
+
+        Console.WriteLine("\n" + new string('─', 100));
+        Console.WriteLine(product);
+        Console.WriteLine(new string('─', 100));
+    }
+
+    static void SearchProductByCategory(ProductRepository repository)
+    {
+        Console.WriteLine("\n═══════════════════════ SEARCH BY CATEGORY ═══════════════════════");
+
+        Console.Write("Enter Category: ");
+        string category = Console.ReadLine();
+
+        var products = repository.GetProductsByCategory(category);
+
+        if (products.Count == 0)
+        {
+            Console.WriteLine($"\n✗ No products found in category '{category}'.");
+            return;
+        }
+
+        Console.WriteLine($"\nProducts in category '{category}':");
+        Console.WriteLine(new string('─', 100));
+        foreach (var product in products)
+        {
+            Console.WriteLine(product);
+        }
+        Console.WriteLine(new string('─', 100));
+        Console.WriteLine($"Total Products: {products.Count}");
+    }
+
+    static void SortProducts(ProductRepository repository)
+    {
+        Console.WriteLine("\n═══════════════════════ SORT PRODUCTS ═══════════════════════");
+        Console.WriteLine("Sort by:");
+        Console.WriteLine("1. Product Name");
+        Console.WriteLine("2. Category");
+        Console.WriteLine("3. Price");
+        Console.WriteLine("4. Stock");
+
+        Console.Write("\nEnter your choice: ");
+        string sortChoice = Console.ReadLine();
+
+        string sortBy = sortChoice switch
+        {
+            "1" => "name",
+            "2" => "category",
+            "3" => "price",
+            "4" => "stock",
+            _ => "id"
+        };
+
+        Console.Write("Sort order (1 = Ascending, 2 = Descending): ");
+        string orderChoice = Console.ReadLine();
+        bool ascending = orderChoice != "2";
+
+        var products = repository.GetProductsSorted(sortBy, ascending);
+
+        if (products.Count == 0)
+        {
+            Console.WriteLine("\nNo products found in the database.");
+            return;
+        }
+
+        Console.WriteLine($"\nProducts sorted by {sortBy} ({(ascending ? "Ascending" : "Descending")}):");
+        Console.WriteLine(new string('─', 100));
+        foreach (var product in products)
+        {
+            Console.WriteLine(product);
+        }
+        Console.WriteLine(new string('─', 100));
+        Console.WriteLine($"Total Products: {products.Count}");
+    }
+}

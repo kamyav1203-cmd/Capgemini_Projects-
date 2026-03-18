@@ -1,0 +1,14 @@
+E:\CapG\AccessSpecifiers\AccessSpecifiers\obj\Debug\net10.0\AccessSpecifiers.GeneratedMSBuildEditorConfig.editorconfig
+E:\CapG\AccessSpecifiers\AccessSpecifiers\obj\Debug\net10.0\AccessSpecifiers.AssemblyInfoInputs.cache
+E:\CapG\AccessSpecifiers\AccessSpecifiers\obj\Debug\net10.0\AccessSpecifiers.AssemblyInfo.cs
+E:\CapG\AccessSpecifiers\AccessSpecifiers\obj\Debug\net10.0\AccessSpecifiers.csproj.CoreCompileInputs.cache
+E:\CapG\AccessSpecifiers\AccessSpecifiers\bin\Debug\net10.0\AccessSpecifiers.exe
+E:\CapG\AccessSpecifiers\AccessSpecifiers\bin\Debug\net10.0\AccessSpecifiers.deps.json
+E:\CapG\AccessSpecifiers\AccessSpecifiers\bin\Debug\net10.0\AccessSpecifiers.runtimeconfig.json
+E:\CapG\AccessSpecifiers\AccessSpecifiers\bin\Debug\net10.0\AccessSpecifiers.dll
+E:\CapG\AccessSpecifiers\AccessSpecifiers\bin\Debug\net10.0\AccessSpecifiers.pdb
+E:\CapG\AccessSpecifiers\AccessSpecifiers\obj\Debug\net10.0\AccessSpecifiers.dll
+E:\CapG\AccessSpecifiers\AccessSpecifiers\obj\Debug\net10.0\refint\AccessSpecifiers.dll
+E:\CapG\AccessSpecifiers\AccessSpecifiers\obj\Debug\net10.0\AccessSpecifiers.pdb
+E:\CapG\AccessSpecifiers\AccessSpecifiers\obj\Debug\net10.0\AccessSpecifiers.genruntimeconfig.cache
+E:\CapG\AccessSpecifiers\AccessSpecifiers\obj\Debug\net10.0\ref\AccessSpecifiers.dll

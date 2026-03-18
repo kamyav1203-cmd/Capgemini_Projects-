@@ -1,0 +1,180 @@
+﻿using System.Data;
+using Microsoft.Data.SqlClient;
+
+namespace ProductManagementSystem;
+
+public class ProductRepository
+{
+    private readonly string _connectionString;
+
+    public ProductRepository(string connectionString)
+    {
+        _connectionString = connectionString;
+    }
+
+    public List<Product> GetAllProducts()
+    {
+        var products = new List<Product>();
+
+        using var connection = new SqlConnection(_connectionString);
+        using var command = new SqlCommand("SELECT ProductId, ProductName, Category, Price, Stock FROM Products", connection);
+        
+        connection.Open();
+        using var reader = command.ExecuteReader();
+        
+        while (reader.Read())
+        {
+            products.Add(new Product
+            {
+                ProductId = reader.GetInt32(0),
+                ProductName = reader.GetString(1),
+                Category = reader.GetString(2),
+                Price = reader.GetDecimal(3),
+                Stock = reader.GetInt32(4)
+            });
+        }
+
+        return products;
+    }
+
+    public Product GetProductById(int id)
+    {
+        using var connection = new SqlConnection(_connectionString);
+        using var command = new SqlCommand("SELECT ProductId, ProductName, Category, Price, Stock FROM Products WHERE ProductId = @Id", connection);
+        
+        command.Parameters.AddWithValue("@Id", id);
+        connection.Open();
+        
+        using var reader = command.ExecuteReader();
+        
+        if (reader.Read())
+        {
+            return new Product
+            {
+                ProductId = reader.GetInt32(0),
+                ProductName = reader.GetString(1),
+                Category = reader.GetString(2),
+                Price = reader.GetDecimal(3),
+                Stock = reader.GetInt32(4)
+            };
+        }
+
+        return null;
+    }
+
+    public List<Product> GetProductsByCategory(string category)
+    {
+        var products = new List<Product>();
+
+        using var connection = new SqlConnection(_connectionString);
+        using var command = new SqlCommand("SELECT ProductId, ProductName, Category, Price, Stock FROM Products WHERE Category LIKE @Category", connection);
+        
+        command.Parameters.AddWithValue("@Category", $"%{category}%");
+        connection.Open();
+        
+        using var reader = command.ExecuteReader();
+        
+        while (reader.Read())
+        {
+            products.Add(new Product
+            {
+                ProductId = reader.GetInt32(0),
+                ProductName = reader.GetString(1),
+                Category = reader.GetString(2),
+                Price = reader.GetDecimal(3),
+                Stock = reader.GetInt32(4)
+            });
+        }
+
+        return products;
+    }
+
+    public void InsertProduct(Product product)
+    {
+        using var connection = new SqlConnection(_connectionString);
+        using var command = new SqlCommand(
+            "INSERT INTO Products (ProductName, Category, Price, Stock) VALUES (@Name, @Category, @Price, @Stock)", 
+            connection);
+        
+        command.Parameters.AddWithValue("@Name", product.ProductName);
+        command.Parameters.AddWithValue("@Category", product.Category);
+        command.Parameters.AddWithValue("@Price", product.Price);
+        command.Parameters.AddWithValue("@Stock", product.Stock);
+        
+        connection.Open();
+        command.ExecuteNonQuery();
+    }
+
+    public void UpdateProduct(Product product)
+    {
+        using var connection = new SqlConnection(_connectionString);
+        using var command = new SqlCommand(
+            "UPDATE Products SET ProductName = @Name, Category = @Category, Price = @Price, Stock = @Stock WHERE ProductId = @Id", 
+            connection);
+        
+        command.Parameters.AddWithValue("@Id", product.ProductId);
+        command.Parameters.AddWithValue("@Name", product.ProductName);
+        command.Parameters.AddWithValue("@Category", product.Category);
+        command.Parameters.AddWithValue("@Price", product.Price);
+        command.Parameters.AddWithValue("@Stock", product.Stock);
+        
+        connection.Open();
+        int rowsAffected = command.ExecuteNonQuery();
+        
+        if (rowsAffected == 0)
+        {
+            throw new Exception("Product not found.");
+        }
+    }
+
+    public void DeleteProduct(int id)
+    {
+        using var connection = new SqlConnection(_connectionString);
+        using var command = new SqlCommand("DELETE FROM Products WHERE ProductId = @Id", connection);
+        
+        command.Parameters.AddWithValue("@Id", id);
+        connection.Open();
+        
+        int rowsAffected = command.ExecuteNonQuery();
+        
+        if (rowsAffected == 0)
+        {
+            throw new Exception("Product not found.");
+        }
+    }
+
+    public List<Product> GetProductsSorted(string sortBy, bool ascending = true)
+    {
+        var products = new List<Product>();
+        string orderDirection = ascending ? "ASC" : "DESC";
+        
+        string query = sortBy.ToLower() switch
+        {
+            "name" => $"SELECT ProductId, ProductName, Category, Price, Stock FROM Products ORDER BY ProductName {orderDirection}",
+            "category" => $"SELECT ProductId, ProductName, Category, Price, Stock FROM Products ORDER BY Category {orderDirection}",
+            "price" => $"SELECT ProductId, ProductName, Category, Price, Stock FROM Products ORDER BY Price {orderDirection}",
+            "stock" => $"SELECT ProductId, ProductName, Category, Price, Stock FROM Products ORDER BY Stock {orderDirection}",
+            _ => $"SELECT ProductId, ProductName, Category, Price, Stock FROM Products ORDER BY ProductId {orderDirection}"
+        };
+
+        using var connection = new SqlConnection(_connectionString);
+        using var command = new SqlCommand(query, connection);
+        
+        connection.Open();
+        using var reader = command.ExecuteReader();
+        
+        while (reader.Read())
+        {
+            products.Add(new Product
+            {
+                ProductId = reader.GetInt32(0),
+                ProductName = reader.GetString(1),
+                Category = reader.GetString(2),
+                Price = reader.GetDecimal(3),
+                Stock = reader.GetInt32(4)
+            });
+        }
+
+        return products;
+    }
+}

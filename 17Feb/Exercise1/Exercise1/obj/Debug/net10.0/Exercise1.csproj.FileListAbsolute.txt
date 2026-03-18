@@ -1,0 +1,14 @@
+E:\CapG\Exercise1\Exercise1\bin\Debug\net10.0\Exercise1.exe
+E:\CapG\Exercise1\Exercise1\bin\Debug\net10.0\Exercise1.deps.json
+E:\CapG\Exercise1\Exercise1\bin\Debug\net10.0\Exercise1.runtimeconfig.json
+E:\CapG\Exercise1\Exercise1\bin\Debug\net10.0\Exercise1.dll
+E:\CapG\Exercise1\Exercise1\bin\Debug\net10.0\Exercise1.pdb
+E:\CapG\Exercise1\Exercise1\obj\Debug\net10.0\Exercise1.GeneratedMSBuildEditorConfig.editorconfig
+E:\CapG\Exercise1\Exercise1\obj\Debug\net10.0\Exercise1.AssemblyInfoInputs.cache
+E:\CapG\Exercise1\Exercise1\obj\Debug\net10.0\Exercise1.AssemblyInfo.cs
+E:\CapG\Exercise1\Exercise1\obj\Debug\net10.0\Exercise1.csproj.CoreCompileInputs.cache
+E:\CapG\Exercise1\Exercise1\obj\Debug\net10.0\Exercise1.dll
+E:\CapG\Exercise1\Exercise1\obj\Debug\net10.0\refint\Exercise1.dll
+E:\CapG\Exercise1\Exercise1\obj\Debug\net10.0\Exercise1.pdb
+E:\CapG\Exercise1\Exercise1\obj\Debug\net10.0\Exercise1.genruntimeconfig.cache
+E:\CapG\Exercise1\Exercise1\obj\Debug\net10.0\ref\Exercise1.dll

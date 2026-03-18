@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables-1 </title>
+    <body>
+        <script>
+            var name = "Alice";
+            var name = "Bob"; // Redeclaring var is allowed, it will override the previous value
+            console.log(name); // Output: Bob
+            
+            console.log("\n====Function Scope====");
+            function testvar (){
+                var name = "Charlie";
+                console.log(name); // Output: Charlie
+            }
+
+            testvar();
+            console.log(name); // Uncaught ReferenceError: name is not defined
+        </script>
+    </body>
+</html>

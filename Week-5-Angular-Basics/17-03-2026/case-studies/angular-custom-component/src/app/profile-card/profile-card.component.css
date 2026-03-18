@@ -1,0 +1,14 @@
+section {
+	background: linear-gradient(160deg, #ffffff 0%, #eef2ff 100%);
+	border: 1px solid #c7d2fe;
+	border-radius: 12px;
+	padding: 1rem 1.25rem;
+	box-shadow: 0 10px 24px rgba(76, 29, 149, 0.14);
+}
+
+h2 {
+	margin: 0 0 0.5rem;
+	font-size: 1.25rem;
+	color: #D85A28;
+}
+

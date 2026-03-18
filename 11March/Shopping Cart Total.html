@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Total</title>
+</head>
+<body>
+    <h2>Shopping Cart Total</h2>
+    <script>
+        const cart = [500, 1200, 800, 1500];
+
+        const total = cart.reduce((acc, price) => acc + price, 0);
+
+        console.log(total); // 4000
+    </script>
+</body>
+</html>

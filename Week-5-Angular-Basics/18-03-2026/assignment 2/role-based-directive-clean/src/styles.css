@@ -1,0 +1,11 @@
+.selector {
+  margin-bottom: 20px;
+  color: white;
+}
+
+select {
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  margin-left: 10px;
+}

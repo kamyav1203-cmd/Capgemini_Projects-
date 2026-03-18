@@ -1,0 +1,23 @@
+<h1>Status Color Directive Demo</h1>
+
+<h2>Student Results</h2>
+<table border="1" cellpadding="10">
+  <thead>
+    <tr>
+      <th>Student Name</th>
+      <th>Marks</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of students">
+      <td>{{student.name}}</td>
+      <td>{{student.marks}}</td>
+      <td [appStatusColor]="student.marks" [passingMarks]="50">
+        {{student.marks >= 50 ? 'PASS' : 'FAIL'}}
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Green = Pass, Red = Fail</p>

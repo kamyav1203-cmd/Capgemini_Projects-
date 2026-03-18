@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ES6 Modules Real Demo</title>
+
+<style>
+body{
+font-family: Arial;
+background:#f4f6f8;
+padding:40px;
+}
+
+.container{
+display:flex;
+gap:30px;
+}
+
+.box{
+background:white;
+padding:25px;
+border-radius:10px;
+width:350px;
+box-shadow:0 6px 18px rgba(0,0,0,0.1);
+}
+
+button{
+padding:10px 16px;
+background:#1976d2;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+margin-top:15px;
+}
+
+.result{
+margin-top:20px;
+font-weight:bold;
+color:#0d47a1;
+white-space:pre-line;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Real ES6 Module Demo (Separate File)</h1>
+
+<div class="container">
+<div class="box">
+
+<h2>Math Operations using Module</h2>
+
+<p>
+Functions are imported from <b>maths.js</b> module using 
+<b>import { }</b> syntax.
+</p>
+
+<button id="runBtn">Run Operations</button>
+
+<div id="output" class="result"></div>
+
+</div>
+</div>
+
+<script type="module">
+
+import { PI, add, subtract, multiply, divide } from './maths.js';
+
+document.getElementById("runBtn").addEventListener("click", ()=>{
+
+let text = "";
+
+text += "PI : " + PI + "\n";
+text += "Add (8 + 2) : " + add(8,2) + "\n";
+text += "Subtract (8 - 2) : " + subtract(8,2) + "\n";
+text += "Multiply (8 * 2) : " + multiply(8,2) + "\n";
+text += "Divide (8 / 2) : " + divide(8,2);
+
+document.getElementById("output").innerText = text;
+
+});
+
+</script>
+
+</body>
+</html>

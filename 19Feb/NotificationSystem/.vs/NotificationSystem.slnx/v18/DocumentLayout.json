@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\CapG\\NotificationSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6CE28862-EB1F-0023-C839-9876CC7DD080}|NotificationSystem\\NotificationSystem.csproj|e:\\capg\\notificationsystem\\notificationsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CE28862-EB1F-0023-C839-9876CC7DD080}|NotificationSystem\\NotificationSystem.csproj|solutionrelative:notificationsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\CapG\\NotificationSystem\\NotificationSystem\\Program.cs",
+              "RelativeDocumentMoniker": "NotificationSystem\\Program.cs",
+              "ToolTip": "E:\\CapG\\NotificationSystem\\NotificationSystem\\Program.cs",
+              "RelativeToolTip": "NotificationSystem\\Program.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T07:09:32.33Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

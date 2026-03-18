@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dynamic Module Demo</title>
+
+<style>
+body{
+font-family: Arial;
+background:#f2f4f7;
+padding:40px;
+}
+
+.box{
+background:white;
+padding:25px;
+border-radius:10px;
+width:350px;
+box-shadow:0 6px 18px rgba(0,0,0,0.1);
+}
+
+button{
+padding:10px 16px;
+background:#1976d2;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+margin-top:15px;
+}
+
+.result{
+margin-top:20px;
+font-weight:bold;
+color:#0d47a1;
+white-space:pre-line;
+}
+</style>
+</head>
+
+<body>
+
+<h1>ES6 Dynamic Import / Export</h1>
+
+<div class="box">
+
+<h2>Math Utils Module Demo</h2>
+
+<button onclick="runModule()">Run Math Operations</button>
+
+<div id="output" class="result"></div>
+
+</div>
+
+<script type="module">
+
+window.runModule = async function(){
+
+const moduleCode = `
+export const PI = 3.14159;
+
+export function add(a,b){ return a+b; }
+
+export function subtract(a,b){ return a-b; }
+
+export function multiply(a,b){ return a*b; }
+
+export function divide(a,b){
+if(b===0) throw new Error("Divide by zero");
+return a/b;
+}
+`;
+
+const blob = new Blob([moduleCode], {type:'text/javascript'});
+const url = URL.createObjectURL(blob);
+
+try{
+const math = await import(url);
+
+let text = "";
+text += "PI : " + math.PI + "\n";
+text += "Add : " + math.add(10,5) + "\n";
+text += "Subtract : " + math.subtract(10,5) + "\n";
+text += "Multiply : " + math.multiply(10,5) + "\n";
+text += "Divide : " + math.divide(10,5);
+
+document.getElementById("output").innerText = text;
+
+}catch(e){
+document.getElementById("output").innerText = e.message;
+}
+
+}
+
+</script>
+
+</body>
+</html>

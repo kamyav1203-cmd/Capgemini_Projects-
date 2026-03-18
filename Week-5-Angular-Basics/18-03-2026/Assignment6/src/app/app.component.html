@@ -1,0 +1,15 @@
+<div [appTheme]="currentTheme">
+  <h1>Theme Directive Demo</h1>
+
+  <div>
+    <h2>Current Theme: {{currentTheme}}</h2>
+    <button (click)="toggleTheme()">Toggle Theme</button>
+  </div>
+
+  <div>
+    <h3>Content Section</h3>
+    <p>This demonstrates theme switching functionality</p>
+    <p>Dark mode shows dark background with light text</p>
+    <p>Light mode shows light background with dark text</p>
+  </div>
+</div>

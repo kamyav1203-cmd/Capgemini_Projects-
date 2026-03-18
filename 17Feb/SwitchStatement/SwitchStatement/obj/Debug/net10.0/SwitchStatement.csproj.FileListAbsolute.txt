@@ -1,0 +1,14 @@
+E:\CapG\SwitchStatement\SwitchStatement\obj\Debug\net10.0\SwitchStatement.GeneratedMSBuildEditorConfig.editorconfig
+E:\CapG\SwitchStatement\SwitchStatement\obj\Debug\net10.0\SwitchStatement.AssemblyInfoInputs.cache
+E:\CapG\SwitchStatement\SwitchStatement\obj\Debug\net10.0\SwitchStatement.AssemblyInfo.cs
+E:\CapG\SwitchStatement\SwitchStatement\obj\Debug\net10.0\SwitchStatement.csproj.CoreCompileInputs.cache
+E:\CapG\SwitchStatement\SwitchStatement\bin\Debug\net10.0\SwitchStatement.exe
+E:\CapG\SwitchStatement\SwitchStatement\bin\Debug\net10.0\SwitchStatement.deps.json
+E:\CapG\SwitchStatement\SwitchStatement\bin\Debug\net10.0\SwitchStatement.runtimeconfig.json
+E:\CapG\SwitchStatement\SwitchStatement\bin\Debug\net10.0\SwitchStatement.dll
+E:\CapG\SwitchStatement\SwitchStatement\bin\Debug\net10.0\SwitchStatement.pdb
+E:\CapG\SwitchStatement\SwitchStatement\obj\Debug\net10.0\SwitchStatement.dll
+E:\CapG\SwitchStatement\SwitchStatement\obj\Debug\net10.0\refint\SwitchStatement.dll
+E:\CapG\SwitchStatement\SwitchStatement\obj\Debug\net10.0\SwitchStatement.pdb
+E:\CapG\SwitchStatement\SwitchStatement\obj\Debug\net10.0\SwitchStatement.genruntimeconfig.cache
+E:\CapG\SwitchStatement\SwitchStatement\obj\Debug\net10.0\ref\SwitchStatement.dll

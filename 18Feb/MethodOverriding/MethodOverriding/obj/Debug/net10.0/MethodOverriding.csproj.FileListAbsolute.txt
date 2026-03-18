@@ -1,0 +1,14 @@
+E:\CapG\MethodOverriding\MethodOverriding\bin\Debug\net10.0\MethodOverriding.exe
+E:\CapG\MethodOverriding\MethodOverriding\bin\Debug\net10.0\MethodOverriding.deps.json
+E:\CapG\MethodOverriding\MethodOverriding\bin\Debug\net10.0\MethodOverriding.runtimeconfig.json
+E:\CapG\MethodOverriding\MethodOverriding\bin\Debug\net10.0\MethodOverriding.dll
+E:\CapG\MethodOverriding\MethodOverriding\bin\Debug\net10.0\MethodOverriding.pdb
+E:\CapG\MethodOverriding\MethodOverriding\obj\Debug\net10.0\MethodOverriding.GeneratedMSBuildEditorConfig.editorconfig
+E:\CapG\MethodOverriding\MethodOverriding\obj\Debug\net10.0\MethodOverriding.AssemblyInfoInputs.cache
+E:\CapG\MethodOverriding\MethodOverriding\obj\Debug\net10.0\MethodOverriding.AssemblyInfo.cs
+E:\CapG\MethodOverriding\MethodOverriding\obj\Debug\net10.0\MethodOverriding.csproj.CoreCompileInputs.cache
+E:\CapG\MethodOverriding\MethodOverriding\obj\Debug\net10.0\MethodOverriding.dll
+E:\CapG\MethodOverriding\MethodOverriding\obj\Debug\net10.0\refint\MethodOverriding.dll
+E:\CapG\MethodOverriding\MethodOverriding\obj\Debug\net10.0\MethodOverriding.pdb
+E:\CapG\MethodOverriding\MethodOverriding\obj\Debug\net10.0\MethodOverriding.genruntimeconfig.cache
+E:\CapG\MethodOverriding\MethodOverriding\obj\Debug\net10.0\ref\MethodOverriding.dll

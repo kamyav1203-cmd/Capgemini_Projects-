@@ -1,0 +1,38 @@
+﻿using System;
+//Program 1
+
+Console.WriteLine("Hello, World!");
+
+// Program 2
+
+//class Program
+//{
+//    static void Main(string[] args)
+//    {
+//        int marks = 65;
+//        Console.WriteLine("Marks: " + marks);
+//        object objmarks = marks; //boxing
+//        Console.WriteLine("Object Marks: " + objmarks);
+//        int unboxmarks = (int)objmarks; //unboxing
+//        Console.WriteLine("Unboxed Marks: " + unboxmarks);
+//        unboxmarks = unboxmarks + 5; //modifying unboxed value
+//        Console.WriteLine("Modified Unboxed Marks: " + unboxmarks);
+//        Console.ReadLine();
+//    }
+//}
+
+// Program 3
+// Sort Array using ODL
+//class ODLExample1
+//{
+//    public static void Main()
+//    {
+//        int[] intArray = new int[5] { 34, 23, 41, 89, 77 };
+//        intArray.Sort(intArray);
+//        //write array
+//        foreach (int i in intArray)
+//        {
+//            Console.Write(i + " ");
+//        }
+//    }
+//}

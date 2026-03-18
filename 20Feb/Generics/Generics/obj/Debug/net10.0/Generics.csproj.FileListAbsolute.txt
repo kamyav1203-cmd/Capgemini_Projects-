@@ -1,0 +1,14 @@
+E:\CapG\Generics\Generics\bin\Debug\net10.0\Generics.exe
+E:\CapG\Generics\Generics\bin\Debug\net10.0\Generics.deps.json
+E:\CapG\Generics\Generics\bin\Debug\net10.0\Generics.runtimeconfig.json
+E:\CapG\Generics\Generics\bin\Debug\net10.0\Generics.dll
+E:\CapG\Generics\Generics\bin\Debug\net10.0\Generics.pdb
+E:\CapG\Generics\Generics\obj\Debug\net10.0\Generics.GeneratedMSBuildEditorConfig.editorconfig
+E:\CapG\Generics\Generics\obj\Debug\net10.0\Generics.AssemblyInfoInputs.cache
+E:\CapG\Generics\Generics\obj\Debug\net10.0\Generics.AssemblyInfo.cs
+E:\CapG\Generics\Generics\obj\Debug\net10.0\Generics.csproj.CoreCompileInputs.cache
+E:\CapG\Generics\Generics\obj\Debug\net10.0\Generics.dll
+E:\CapG\Generics\Generics\obj\Debug\net10.0\refint\Generics.dll
+E:\CapG\Generics\Generics\obj\Debug\net10.0\Generics.pdb
+E:\CapG\Generics\Generics\obj\Debug\net10.0\Generics.genruntimeconfig.cache
+E:\CapG\Generics\Generics\obj\Debug\net10.0\ref\Generics.dll

@@ -1,0 +1,42 @@
+﻿using System;
+class Car
+{
+    public int NumberOfDoors;
+    public string Name;
+    public Car()
+    {
+        Name = "No Name";
+        NumberOfDoors = 3;
+    }
+    public Car(string name, int numberOfDoors)
+    {
+        Name = name;
+        NumberOfDoors = numberOfDoors;
+    }
+    public Car(string name)
+    {
+        Name = name;
+        NumberOfDoors = 0;    
+    }
+    public Car(int numberOfDoors) 
+    {
+        Name = " ";
+        NumberOfDoors = numberOfDoors;
+
+    }
+}
+
+class ODLExce
+{
+    static void Main(string[] args)
+    {
+        Car car1 = new Car("BMW", 4);
+        Car car2 = new Car("Mercedes");
+        Car car3 = new Car(2);
+        Car car4 = new Car();
+        Console.WriteLine($"Car 1: Name: {car1.Name}, Number of Doors: {car1.NumberOfDoors}");
+        Console.WriteLine($"Car 2: Name: {car2.Name}, Number of Doors: {car2.NumberOfDoors}");
+        Console.WriteLine($"Car 3: Name: {car3.Name}, Number of Doors: {car3.NumberOfDoors}");
+        Console.WriteLine($"Car 4: Name: {car4.Name}, Number of Doors: {car4.NumberOfDoors}");
+    }
+}

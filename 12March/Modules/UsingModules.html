@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Modules</title>
+    
+
+<style>
+body{
+font-family: Arial;
+padding:40px;
+}
+
+h2{
+margin-top:40px;
+}
+
+.container{
+display:flex;
+gap:40px;
+}
+
+.box{
+border:1px solid #ccc;
+padding:20px;
+width:300px;
+border-radius:8px;
+}
+
+button{
+margin-top:10px;
+padding:6px 12px;
+}
+
+.result{
+margin-top:10p  x;
+font-weight:bold;
+color:blue;
+}
+</style>
+</head>
+<body>
+    <h1>Using Modules in JavaScript</h1>
+    <script>
+
+        
+        //Before using modules project 1, we can define functions and variables in the global scope
+
+        function checkEmail1(){
+            const email1 = document.getElementById('emailInput').value;
+            const result1 = validateEmail1(email1) ? 'Valid Email' : 'Invalid Email';
+            document.getElementById('emailResult').textContent = result1;
+        }
+
+        function formatDate1(date) {
+            return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
+        }
+
+        function validateEmail1(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+
+
+        //before using modules project 2
+        function checkEmail2(){
+            const email2 = document.getElementById('emailInput').value;
+            const result2 = validateEmail2(email2) ? 'Valid Email' : 'Invalid Email';
+            document.getElementById('emailResult').textContent = result2;
+        }
+
+        function formatDate2(date) {
+            return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
+        }
+
+        function validateEmail2(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+
+        //After using modules
+        const Utils = {
+            formatDate(date) {
+                return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
+            },
+            // 2nd way of writing it .
+            // formatDate: function(date) {
+            //     return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
+            // },
+            validateEmail(email){
+                return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+            }
+        };
+
+        document.getElementById('date3').innerText = Utils.formatDate(new Date());
+
+        //we use shared methods fom utils module to check email
+        function checkEmail3(){
+            const email = document.getElementById('email3').value;
+            const result = Utils.validateEmail(email) ? 'Valid Email' : 'Invalid Email';
+            document.getElementById('result3').textContent = result;
+        }
+
+    </script>
+</body>

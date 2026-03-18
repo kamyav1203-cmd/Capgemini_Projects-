@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form Keyboard Event</title>
+</head>
+<body>
+
+    <input type="text" id="username" placeholder="Enter username">
+
+    <script>
+        document.getElementById("username").addEventListener("keydown", function(e) {
+            if (e.key === "Enter") {
+                console.log("Login attempt triggered");
+                alert("Submitting login form");
+            }
+        });
+    </script>
+
+</body>
+</html>
