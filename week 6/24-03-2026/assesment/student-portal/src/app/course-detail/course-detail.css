@@ -1,0 +1,10 @@
+.detail-card {
+  text-align: center;
+}
+
+.detail-card a {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #007bff;
+}
