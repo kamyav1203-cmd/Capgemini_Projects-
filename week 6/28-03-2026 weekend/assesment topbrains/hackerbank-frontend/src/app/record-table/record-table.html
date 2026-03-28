@@ -1,0 +1,79 @@
+<div class="container">
+  <h2>Transaction History</h2>
+
+  <!-- 🔍 SEARCH -->
+  <input
+    type="text"
+    placeholder="Search description..."
+    [(ngModel)]="searchText"
+    class="search-box"
+  />
+
+  <!-- 📅 DATE FILTER -->
+  <div class="date-filter">
+    <input type="date" [(ngModel)]="selectedDate" />
+    <button (click)="applyFilter()">Filter</button>
+  </div>
+
+  <!-- ➕ ADD FORM -->
+  <div class="form">
+    <input type="date" [(ngModel)]="newTransaction.date" />
+
+    <input
+      type="text"
+      placeholder="Description"
+      [(ngModel)]="newTransaction.description"
+    />
+
+    <select [(ngModel)]="newTransaction.type">
+      <option [value]="0">Credit</option>
+      <option [value]="1">Debit</option>
+    </select>
+
+    <input
+      type="number"
+      placeholder="Amount"
+      [(ngModel)]="newTransaction.amount"
+    />
+
+    <input
+      type="number"
+      placeholder="Balance"
+      [(ngModel)]="newTransaction.balance"
+    />
+
+    <button (click)="addTransaction()">Add</button>
+  </div>
+
+  <!-- 📊 TABLE -->
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Amount</th>
+        <th>Balance</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let t of filteredData; let i = index">
+        <td>{{ t.date }}</td>
+        <td>{{ t.description }}</td>
+        <td>{{ t.type == 0 ? 'Credit' : 'Debit' }}</td>
+
+        <td [style.color]="t.type == 0 ? 'green' : 'red'">
+          ₹ {{ t.amount }}
+        </td>
+
+        <td>₹ {{ t.balance }}</td>
+
+        <td>
+          <button (click)="deleteTransaction(i)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

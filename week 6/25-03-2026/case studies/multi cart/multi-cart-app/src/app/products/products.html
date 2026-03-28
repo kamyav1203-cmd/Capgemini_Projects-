@@ -1,0 +1,29 @@
+<h2>Products</h2>
+
+<div *ngFor="let product of products" class="card">
+  
+  <!-- Product Name -->
+  <p><b>{{ product.name }}</b></p>
+
+  <!-- Price -->
+  <p>₹ {{ product.price }}</p>
+
+  <!-- Show FREE for Priyadarshni -->
+  <p *ngIf="product.price === 0" style="color: green;">
+    FREE 🎁
+  </p>
+
+  <!-- Out of Stock -->
+  <p *ngIf="product.stock === 0" style="color: red;">
+    Out of Stock ❌
+  </p>
+
+  <!-- Button -->
+  <button 
+    (click)="addToCart(product)"
+    [disabled]="product.stock === 0"
+  >
+    {{ product.stock === 0 ? 'Out of Stock' : 'Add to Cart' }}
+  </button>
+
+</div>

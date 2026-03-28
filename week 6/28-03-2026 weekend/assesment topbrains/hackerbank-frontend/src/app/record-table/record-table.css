@@ -1,0 +1,63 @@
+.container {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  font-family: Arial;
+}
+
+h2 {
+  margin: 20px 0;
+}
+
+.search-box {
+  padding: 10px;
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+.date-filter {
+  margin-bottom: 15px;
+}
+
+.date-filter input {
+  padding: 8px;
+  margin: 5px;
+}
+
+.form {
+  margin-bottom: 20px;
+}
+
+.form input, .form select {
+  padding: 8px;
+  margin: 5px;
+}
+
+button {
+  padding: 8px 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+th {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}

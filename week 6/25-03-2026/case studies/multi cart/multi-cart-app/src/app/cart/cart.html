@@ -1,0 +1,14 @@
+<h2>Cart</h2>
+
+<div *ngFor="let item of getItems(); let i = index" class="card">
+  <p><b>{{ item.name }}</b></p>
+
+  <p *ngIf="item.price > 0">₹ {{ item.price }}</p>
+  <p *ngIf="item.price === 0" style="color: green;">FREE 🎁</p>
+
+  <button (click)="removeItem(i)">Remove</button>
+</div>
+
+<h3>Total: ₹ {{ getTotal() }}</h3>
+
+<button (click)="clearCart()">Clear Cart</button>

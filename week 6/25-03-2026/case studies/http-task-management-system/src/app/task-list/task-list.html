@@ -1,0 +1,32 @@
+<div class="container">
+  <h1>Task Manager</h1>
+
+  <!-- Input -->
+  <div class="input-box">
+    <input [(ngModel)]="newTask" placeholder="Enter a task..." />
+    <button (click)="addTask()">Add</button>
+  </div>
+
+  <!-- Filters -->
+  <div class="filters">
+    <button (click)="filter='all'">All</button>
+    <button (click)="filter='completed'">Completed</button>
+    <button (click)="filter='pending'">Pending</button>
+  </div>
+
+  <!-- Task List -->
+  <ul>
+    <li *ngFor="let task of filteredTasks">
+      <span 
+        [class.completed]="task.completed"
+        (click)="toggleTask(task)"
+      >
+        {{ task.title }}
+      </span>
+
+      <button class="delete" (click)="deleteTask(task.id)">X</button>
+    </li>
+  </ul>
+
+  <p *ngIf="tasks.length === 0">No tasks yet</p>
+</div>
