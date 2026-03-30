@@ -1,10 +1,11 @@
-import './App.css';
-import Counter from './Components/counter';
+import React from "react";
+import TemperatureConverter from "./Components/TemperatureConverter"; // ✅ changed
 
 function App() {
   return (
-    <div className="App">
-      <Counter />
+    <div>
+      <h1 style={{ textAlign: "center" }}>State vs Props Demo</h1>
+      <TemperatureConverter /> {/* ✅ changed */}
     </div>
   );
 }
