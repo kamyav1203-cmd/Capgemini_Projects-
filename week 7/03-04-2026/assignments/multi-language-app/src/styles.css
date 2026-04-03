@@ -1,0 +1,74 @@
+/* Reset */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #eef2f3, #f9fafb);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e293b;
+  color: white;
+  padding: 16px 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Dropdown */
+.dropdown {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dropdown:hover {
+  background: #2563eb;
+}
+
+.dropdown:focus {
+  outline: none;
+}
+
+/* Main Container */
+.container {
+  text-align: center;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+/* Card Style */
+.container {
+  background: white;
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading */
+.container h1 {
+  font-size: 36px;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+/* Text */
+.container p {
+  font-size: 18px;
+  color: #475569;
+}
