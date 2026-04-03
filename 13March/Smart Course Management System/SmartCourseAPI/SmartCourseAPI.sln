@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCourseAPI", "SmartCourseAPI.csproj", "{9DF0DED5-0302-82E0-2EA7-F032AA4CF9EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DF0DED5-0302-82E0-2EA7-F032AA4CF9EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DF0DED5-0302-82E0-2EA7-F032AA4CF9EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DF0DED5-0302-82E0-2EA7-F032AA4CF9EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DF0DED5-0302-82E0-2EA7-F032AA4CF9EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4AA90115-53D6-4A39-BEEB-84DA9745029C}
+	EndGlobalSection
+EndGlobal
