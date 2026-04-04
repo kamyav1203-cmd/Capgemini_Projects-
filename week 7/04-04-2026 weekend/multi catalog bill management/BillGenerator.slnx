@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="BillGenerator.Api/BillGenerator.Api.csproj" />
+  <Project Path="BillGenerator.Domain/BillGenerator.Domain.csproj" />
+  <Project Path="BillGenerator.Infrastructure/BillGenerator.Infrastructure.csproj" />
+</Solution>
