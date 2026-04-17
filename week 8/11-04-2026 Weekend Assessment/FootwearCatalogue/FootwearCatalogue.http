@@ -1,0 +1,25 @@
+@FootwearCatalogue_HostAddress = http://localhost:5267
+
+GET {{FootwearCatalogue_HostAddress}}/api/footwear
+Accept: application/json
+
+###
+
+POST {{FootwearCatalogue_HostAddress}}/api/footwear
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Coastal Slide Sandal",
+  "brand": "ShoreStep",
+  "category": "Sandals",
+  "gender": "Unisex",
+  "material": "EVA",
+  "color": "Black",
+  "size": 9.5,
+  "price": 39.99,
+  "stock": 25,
+  "releaseYear": 2026
+}
+
+###
