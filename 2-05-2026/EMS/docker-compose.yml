@@ -1,0 +1,66 @@
+version: '3.9'
+
+services:
+
+  # ── MSSQL Database ──────────────────────────────────────────────
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: ems-mssql
+    environment:
+      SA_PASSWORD: "YourStrong@Passw0rd"
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: "Developer"
+    ports:
+      - "1433:1433"
+    volumes:
+      - mssql_data:/var/opt/mssql
+    networks:
+      - ems-network
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P 'YourStrong@Passw0rd' -Q 'SELECT 1' -No -C 2>/dev/null || exit 1"]
+      interval: 10s
+      retries: 15
+      start_period: 45s
+      timeout: 10s
+
+  # ── EMS Web API ─────────────────────────────────────────────────
+  ems-api:
+    build:
+      context: ./EMS.InMemoryAPI
+      dockerfile: Dockerfile
+    container_name: ems-api
+    ports:
+      - "5000:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__DefaultConnection=Server=mssql;Database=EMSDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;MultipleActiveResultSets=true;
+    depends_on:
+      mssql:
+        condition: service_healthy
+    networks:
+      - ems-network
+    restart: always
+
+  # ── EMS MVC Frontend ────────────────────────────────────────────
+  ems-mvc:
+    build:
+      context: ./EMS.MvcApp
+      dockerfile: Dockerfile
+    container_name: ems-mvc
+    ports:
+      - "5001:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ApiSettings__BaseUrl=http://ems-api:8080
+    depends_on:
+      - ems-api
+    networks:
+      - ems-network
+    restart: always
+
+volumes:
+  mssql_data:
+
+networks:
+  ems-network:
+    driver: bridge

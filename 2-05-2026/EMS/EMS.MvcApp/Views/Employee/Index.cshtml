@@ -1,0 +1,53 @@
+@model List<Employee>
+@{ ViewData["Title"] = "Employees"; }
+
+<div class="page-header">
+    <div>
+        <h1 class="page-title">Employees</h1>
+        <p class="page-sub">@Model.Count record@(Model.Count != 1 ? "s" : "") found</p>
+    </div>
+    <a href="/Employee/Create" class="btn btn-primary">+ Add Employee</a>
+</div>
+
+@if (!Model.Any())
+{
+    <div class="empty-state">
+        <div class="empty-icon">👥</div>
+        <p>No employees yet. Add your first one.</p>
+        <a href="/Employee/Create" class="btn btn-primary">Add Employee</a>
+    </div>
+}
+else
+{
+    <div class="table-wrap">
+        <table class="emp-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Email</th>
+                    <th>Salary</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var emp in Model)
+                {
+                    <tr>
+                        <td class="id-cell">@emp.Id</td>
+                        <td class="name-cell">@emp.Name</td>
+                        <td><span class="dept-badge">@emp.Department</span></td>
+                        <td class="email-cell">@emp.Email</td>
+                        <td class="salary-cell">₹@emp.Salary.ToString("N0")</td>
+                        <td class="action-cell">
+                            <a href="/Employee/Details/@emp.Id" class="btn btn-sm btn-ghost">View</a>
+                            <a href="/Employee/Edit/@emp.Id" class="btn btn-sm btn-outline">Edit</a>
+                            <a href="/Employee/Delete/@emp.Id" class="btn btn-sm btn-danger">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}

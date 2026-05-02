@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] — EMS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <span class="brand-mark">⬡</span>
+                <span class="brand-text">EMS</span>
+                <span class="brand-sub">Employee Management System</span>
+            </div>
+            <div class="nav-links">
+                <a href="/Employee" class="nav-link">All Employees</a>
+                <a href="/Employee/Create" class="nav-link nav-cta">+ New Employee</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        @RenderBody()
+    </main>
+
+    <footer class="footer">
+        <span>EMS &copy; @DateTime.Now.Year</span>
+        <span class="footer-sep">|</span>
+        <span>Built on .NET 10 + MSSQL + Docker</span>
+    </footer>
+</body>
+</html>
