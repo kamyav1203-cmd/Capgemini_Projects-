@@ -1,0 +1,28 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Welcome";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome Page</title>
+</head>
+<body style="text-align:center; font-family:Arial; margin-top:100px;">
+
+    <h1>Welcome to My First ASP.NET Core App 🚀</h1>
+    <p>This is a simple welcome page created by Kamya 💻</p>
+
+    <button onclick="showMessage()">Click Me</button>
+
+    <p id="msg"></p>
+
+    <script>
+            function showMessage() {
+                document.getElementById("msg").innerHTML = "You clicked the button 🎉";
+            }
+    </script>
+
+</body>
+</html>

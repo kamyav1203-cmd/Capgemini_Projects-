@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vyasn\\Downloads\\EMS\\EMS.MvcApp\\EMS.MvcApp.csproj",
+      "projectUniqueName": "C:\\Users\\vyasn\\OneDrive\\Documents\\kamya vyas capgemini projects\\2-05-2026\\EMS\\EMS.MvcApp\\EMS.MvcApp.csproj",
       "projectName": "EMS.MvcApp",
-      "projectPath": "C:\\Users\\vyasn\\Downloads\\EMS\\EMS.MvcApp\\EMS.MvcApp.csproj",
+      "projectPath": "C:\\Users\\vyasn\\OneDrive\\Documents\\kamya vyas capgemini projects\\2-05-2026\\EMS\\EMS.MvcApp\\EMS.MvcApp.csproj",
       "packagesPath": "C:\\Users\\vyasn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vyasn\\Downloads\\EMS\\EMS.MvcApp\\obj\\",
+      "outputPath": "C:\\Users\\vyasn\\OneDrive\\Documents\\kamya vyas capgemini projects\\2-05-2026\\EMS\\EMS.MvcApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

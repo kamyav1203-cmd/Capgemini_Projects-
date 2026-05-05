@@ -1,0 +1,99 @@
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\bin\Debug\net10.0\appsettings.Development.json
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\bin\Debug\net10.0\appsettings.json
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\bin\Debug\net10.0\05-05-2026 welcome page.staticwebassets.runtime.json
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\bin\Debug\net10.0\05-05-2026 welcome page.staticwebassets.endpoints.json
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\bin\Debug\net10.0\05-05-2026 welcome page.exe
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\bin\Debug\net10.0\05-05-2026 welcome page.deps.json
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\bin\Debug\net10.0\05-05-2026 welcome page.runtimeconfig.json
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\bin\Debug\net10.0\05-05-2026 welcome page.dll
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\bin\Debug\net10.0\05-05-2026 welcome page.pdb
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\05-05-2026 welcome page.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\05-05-2026 welcome page.AssemblyInfoInputs.cache
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\05-05-2026 welcome page.AssemblyInfo.cs
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\05-05-2026 welcome page.csproj.CoreCompileInputs.cache
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\05-05-2026 welcome page.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\05-05-2026 welcome page.RazorAssemblyInfo.cache
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\05-05-2026 welcome page.RazorAssemblyInfo.cs
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\05-05-2026 welcome page.sourcelink.json
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\scopedcss\bundle\05-05-2026 welcome page.styles.css
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\scopedcss\projectbundle\05-05-2026 welcome page.bundle.scp.css
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\22h7zp8imt-{0}-b9sayid5wm-b9sayid5wm.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\3wph2wbxpg-{0}-61n19gt1b8-61n19gt1b8.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\mrtt358vsz-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\kuey572grf-{0}-bqjiyaj88i-bqjiyaj88i.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\3xjcj7uhm0-{0}-c2jlpeoesf-c2jlpeoesf.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\zxp9fi2o71-{0}-erw9l3u2r3-erw9l3u2r3.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\3w8b98xgql-{0}-aexeepp0ev-aexeepp0ev.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\7v6rrw2y8s-{0}-d7shbmvgxk-d7shbmvgxk.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\hrstwqkaly-{0}-ausgxo2sd3-ausgxo2sd3.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\92e2ocvmxj-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\kgrawk78ht-{0}-cosvhxvwiu-cosvhxvwiu.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\kb2e4i4wvq-{0}-ub07r2b239-ub07r2b239.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\kuezqa45to-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\mlwxoo98uf-{0}-b7pk76d08c-b7pk76d08c.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\5f50djpfcz-{0}-fsbi9cje9m-fsbi9cje9m.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\6gzoj6gg28-{0}-rzd6atqjts-rzd6atqjts.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\ajsjagprj2-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\0izgwjymi5-{0}-dxx9fxp4il-dxx9fxp4il.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\sjo0l2kptj-{0}-jd9uben2k1-jd9uben2k1.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\sjfk5jabtz-{0}-khv3u5hwcm-khv3u5hwcm.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\5hpoidp9sf-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\gxjdbu1qw1-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\174yzrvcxl-{0}-c2oey78nd0-c2oey78nd0.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\0occe3q1yu-{0}-tdbxkamptv-tdbxkamptv.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\tsbis9seqz-{0}-j5mq2jizvt-j5mq2jizvt.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\zwrb5vv9qx-{0}-06098lyss8-06098lyss8.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\aq1noxwq01-{0}-nvvlpmu67g-nvvlpmu67g.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\fxksl7l4bd-{0}-s35ty4nyc5-s35ty4nyc5.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\4vxla5yd09-{0}-pj5nd1wqec-pj5nd1wqec.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\5n3yrhhlop-{0}-46ein0sx1k-46ein0sx1k.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\22ta7dqdvh-{0}-v0zj4ognzu-v0zj4ognzu.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\juh229gxyu-{0}-37tfw0ft22-37tfw0ft22.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\i974dd22dl-{0}-hrwsygsryq-hrwsygsryq.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\jbwg2mp2j0-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\6n16bpcwa4-{0}-ft3s53vfgj-ft3s53vfgj.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\d7lqu3likk-{0}-6cfz1n2cew-6cfz1n2cew.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\v22q8jbmov-{0}-6pdc2jztkx-6pdc2jztkx.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\cfmesfq1g8-{0}-493y06b0oq-493y06b0oq.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\6ml91gldmx-{0}-iovd86k7lj-iovd86k7lj.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\67iypnj8mb-{0}-vr1egmr9el-vr1egmr9el.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\n281qxxh4b-{0}-kbrnm935zg-kbrnm935zg.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\sstrfp0oyc-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\hpyvfrhjo9-{0}-y7v9cxd14o-y7v9cxd14o.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\a8t1bq144u-{0}-notf2xhcfb-notf2xhcfb.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\livftv23xx-{0}-h1s4sie4z3-h1s4sie4z3.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\8bbt5ctl0r-{0}-63fj8s7r0e-63fj8s7r0e.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\6toi2tl62j-{0}-0j3bgjxly4-0j3bgjxly4.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\s74k2bra38-{0}-47otxtyo56-47otxtyo56.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\qvcx1p3mib-{0}-4v8eqarkd7-4v8eqarkd7.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\qg1igzpcxi-{0}-356vix0kms-356vix0kms.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\t7h9k0oq19-{0}-83jwlth58m-83jwlth58m.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\1ny66sh5lu-{0}-mrlpezrjn3-mrlpezrjn3.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\m6b3nlgile-{0}-lzl9nlhx6b-lzl9nlhx6b.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\mbwhd9w4el-{0}-ag7o75518u-ag7o75518u.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\mhc70c7u9p-{0}-x0q3zqp4vz-x0q3zqp4vz.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\gen3qaso6z-{0}-0i3buxo5is-0i3buxo5is.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\ufu3wjvdxi-{0}-o1o13a6vjx-o1o13a6vjx.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\znvdzcsk7l-{0}-ttgo8qnofa-ttgo8qnofa.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\6zopecjb9i-{0}-2z0ns9nrw6-2z0ns9nrw6.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\qjbe69slir-{0}-muycvpuwrr-muycvpuwrr.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\2p5eb82zeh-{0}-87fc7y1x7t-87fc7y1x7t.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\uqk6jvnqgx-{0}-mlv21k5csn-mlv21k5csn.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\41itmzca2u-{0}-qw4k9yy79i-qw4k9yy79i.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\compressed\u35wg7vumu-{0}-qw4k9yy79i-qw4k9yy79i.gz
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\staticwebassets.development.json
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\05-05-2026 welcome page.dll
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\refint\05-05-2026 welcome page.dll
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\05-05-2026 welcome page.pdb
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\05-05-2026 welcome page.genruntimeconfig.cache
+C:\Users\vyasn\OneDrive\Documents\kamya vyas capgemini projects\week 9\05-05-2026 welcome page\05-05-2026 welcome page\obj\Debug\net10.0\ref\05-05-2026 welcome page.dll

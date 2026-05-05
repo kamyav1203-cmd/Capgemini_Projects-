@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vyasn\\OneDrive\\Documents\\kamya vyas capgemini projects\\week 9\\05-05-2026 welcome page\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1A7464EE-B018-4CEE-B5A6-CF80BA02AE10}|05-05-2026 welcome page\\05-05-2026 welcome page.csproj|c:\\users\\vyasn\\onedrive\\documents\\kamya vyas capgemini projects\\week 9\\05-05-2026 welcome page\\05-05-2026 welcome page\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1A7464EE-B018-4CEE-B5A6-CF80BA02AE10}|05-05-2026 welcome page\\05-05-2026 welcome page.csproj|solutionrelative:05-05-2026 welcome page\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\vyasn\\OneDrive\\Documents\\kamya vyas capgemini projects\\week 9\\05-05-2026 welcome page\\05-05-2026 welcome page\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "05-05-2026 welcome page\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\vyasn\\OneDrive\\Documents\\kamya vyas capgemini projects\\week 9\\05-05-2026 welcome page\\05-05-2026 welcome page\\Pages\\Index.cshtml*",
+              "RelativeToolTip": "05-05-2026 welcome page\\Pages\\Index.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-05T05:56:02.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

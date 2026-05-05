@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vyasn\\Downloads\\EMS\\EMS.InMemoryAPI\\EMS.InMemoryAPI.csproj": {}
+    "C:\\Users\\vyasn\\OneDrive\\Documents\\kamya vyas capgemini projects\\2-05-2026\\EMS\\EMS.InMemoryAPI\\EMS.InMemoryAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vyasn\\Downloads\\EMS\\EMS.InMemoryAPI\\EMS.InMemoryAPI.csproj": {
+    "C:\\Users\\vyasn\\OneDrive\\Documents\\kamya vyas capgemini projects\\2-05-2026\\EMS\\EMS.InMemoryAPI\\EMS.InMemoryAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vyasn\\Downloads\\EMS\\EMS.InMemoryAPI\\EMS.InMemoryAPI.csproj",
+        "projectUniqueName": "C:\\Users\\vyasn\\OneDrive\\Documents\\kamya vyas capgemini projects\\2-05-2026\\EMS\\EMS.InMemoryAPI\\EMS.InMemoryAPI.csproj",
         "projectName": "EMS.InMemoryAPI",
-        "projectPath": "C:\\Users\\vyasn\\Downloads\\EMS\\EMS.InMemoryAPI\\EMS.InMemoryAPI.csproj",
+        "projectPath": "C:\\Users\\vyasn\\OneDrive\\Documents\\kamya vyas capgemini projects\\2-05-2026\\EMS\\EMS.InMemoryAPI\\EMS.InMemoryAPI.csproj",
         "packagesPath": "C:\\Users\\vyasn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vyasn\\Downloads\\EMS\\EMS.InMemoryAPI\\obj\\",
+        "outputPath": "C:\\Users\\vyasn\\OneDrive\\Documents\\kamya vyas capgemini projects\\2-05-2026\\EMS\\EMS.InMemoryAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
