@@ -1,0 +1,14 @@
+C:\Users\vyasn\OneDrive\Desktop\7 may\SalesDataAggregator\SalesDataAggregator\bin\Debug\net10.0\SalesDataAggregator.exe
+C:\Users\vyasn\OneDrive\Desktop\7 may\SalesDataAggregator\SalesDataAggregator\bin\Debug\net10.0\SalesDataAggregator.deps.json
+C:\Users\vyasn\OneDrive\Desktop\7 may\SalesDataAggregator\SalesDataAggregator\bin\Debug\net10.0\SalesDataAggregator.runtimeconfig.json
+C:\Users\vyasn\OneDrive\Desktop\7 may\SalesDataAggregator\SalesDataAggregator\bin\Debug\net10.0\SalesDataAggregator.dll
+C:\Users\vyasn\OneDrive\Desktop\7 may\SalesDataAggregator\SalesDataAggregator\bin\Debug\net10.0\SalesDataAggregator.pdb
+C:\Users\vyasn\OneDrive\Desktop\7 may\SalesDataAggregator\SalesDataAggregator\obj\Debug\net10.0\SalesDataAggregator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vyasn\OneDrive\Desktop\7 may\SalesDataAggregator\SalesDataAggregator\obj\Debug\net10.0\SalesDataAggregator.AssemblyInfoInputs.cache
+C:\Users\vyasn\OneDrive\Desktop\7 may\SalesDataAggregator\SalesDataAggregator\obj\Debug\net10.0\SalesDataAggregator.AssemblyInfo.cs
+C:\Users\vyasn\OneDrive\Desktop\7 may\SalesDataAggregator\SalesDataAggregator\obj\Debug\net10.0\SalesDataAggregator.csproj.CoreCompileInputs.cache
+C:\Users\vyasn\OneDrive\Desktop\7 may\SalesDataAggregator\SalesDataAggregator\obj\Debug\net10.0\SalesDataAggregator.dll
+C:\Users\vyasn\OneDrive\Desktop\7 may\SalesDataAggregator\SalesDataAggregator\obj\Debug\net10.0\refint\SalesDataAggregator.dll
+C:\Users\vyasn\OneDrive\Desktop\7 may\SalesDataAggregator\SalesDataAggregator\obj\Debug\net10.0\SalesDataAggregator.pdb
+C:\Users\vyasn\OneDrive\Desktop\7 may\SalesDataAggregator\SalesDataAggregator\obj\Debug\net10.0\SalesDataAggregator.genruntimeconfig.cache
+C:\Users\vyasn\OneDrive\Desktop\7 may\SalesDataAggregator\SalesDataAggregator\obj\Debug\net10.0\ref\SalesDataAggregator.dll

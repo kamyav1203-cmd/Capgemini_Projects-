@@ -1,0 +1,14 @@
+C:\Users\vyasn\OneDrive\Desktop\7 may\StudentGradeProcessor\StudentGradeProcessor\bin\Debug\net10.0\StudentGradeProcessor.exe
+C:\Users\vyasn\OneDrive\Desktop\7 may\StudentGradeProcessor\StudentGradeProcessor\bin\Debug\net10.0\StudentGradeProcessor.deps.json
+C:\Users\vyasn\OneDrive\Desktop\7 may\StudentGradeProcessor\StudentGradeProcessor\bin\Debug\net10.0\StudentGradeProcessor.runtimeconfig.json
+C:\Users\vyasn\OneDrive\Desktop\7 may\StudentGradeProcessor\StudentGradeProcessor\bin\Debug\net10.0\StudentGradeProcessor.dll
+C:\Users\vyasn\OneDrive\Desktop\7 may\StudentGradeProcessor\StudentGradeProcessor\bin\Debug\net10.0\StudentGradeProcessor.pdb
+C:\Users\vyasn\OneDrive\Desktop\7 may\StudentGradeProcessor\StudentGradeProcessor\obj\Debug\net10.0\StudentGradeProcessor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vyasn\OneDrive\Desktop\7 may\StudentGradeProcessor\StudentGradeProcessor\obj\Debug\net10.0\StudentGradeProcessor.AssemblyInfoInputs.cache
+C:\Users\vyasn\OneDrive\Desktop\7 may\StudentGradeProcessor\StudentGradeProcessor\obj\Debug\net10.0\StudentGradeProcessor.AssemblyInfo.cs
+C:\Users\vyasn\OneDrive\Desktop\7 may\StudentGradeProcessor\StudentGradeProcessor\obj\Debug\net10.0\StudentGradeProcessor.csproj.CoreCompileInputs.cache
+C:\Users\vyasn\OneDrive\Desktop\7 may\StudentGradeProcessor\StudentGradeProcessor\obj\Debug\net10.0\StudentGradeProcessor.dll
+C:\Users\vyasn\OneDrive\Desktop\7 may\StudentGradeProcessor\StudentGradeProcessor\obj\Debug\net10.0\refint\StudentGradeProcessor.dll
+C:\Users\vyasn\OneDrive\Desktop\7 may\StudentGradeProcessor\StudentGradeProcessor\obj\Debug\net10.0\StudentGradeProcessor.pdb
+C:\Users\vyasn\OneDrive\Desktop\7 may\StudentGradeProcessor\StudentGradeProcessor\obj\Debug\net10.0\StudentGradeProcessor.genruntimeconfig.cache
+C:\Users\vyasn\OneDrive\Desktop\7 may\StudentGradeProcessor\StudentGradeProcessor\obj\Debug\net10.0\ref\StudentGradeProcessor.dll

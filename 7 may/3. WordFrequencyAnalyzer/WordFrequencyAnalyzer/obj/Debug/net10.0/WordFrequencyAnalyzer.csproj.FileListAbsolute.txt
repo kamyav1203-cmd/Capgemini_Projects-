@@ -1,0 +1,14 @@
+C:\Users\vyasn\OneDrive\Desktop\7 may\WordFrequencyAnalyzer\WordFrequencyAnalyzer\bin\Debug\net10.0\WordFrequencyAnalyzer.exe
+C:\Users\vyasn\OneDrive\Desktop\7 may\WordFrequencyAnalyzer\WordFrequencyAnalyzer\bin\Debug\net10.0\WordFrequencyAnalyzer.deps.json
+C:\Users\vyasn\OneDrive\Desktop\7 may\WordFrequencyAnalyzer\WordFrequencyAnalyzer\bin\Debug\net10.0\WordFrequencyAnalyzer.runtimeconfig.json
+C:\Users\vyasn\OneDrive\Desktop\7 may\WordFrequencyAnalyzer\WordFrequencyAnalyzer\bin\Debug\net10.0\WordFrequencyAnalyzer.dll
+C:\Users\vyasn\OneDrive\Desktop\7 may\WordFrequencyAnalyzer\WordFrequencyAnalyzer\bin\Debug\net10.0\WordFrequencyAnalyzer.pdb
+C:\Users\vyasn\OneDrive\Desktop\7 may\WordFrequencyAnalyzer\WordFrequencyAnalyzer\obj\Debug\net10.0\WordFrequencyAnalyzer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vyasn\OneDrive\Desktop\7 may\WordFrequencyAnalyzer\WordFrequencyAnalyzer\obj\Debug\net10.0\WordFrequencyAnalyzer.AssemblyInfoInputs.cache
+C:\Users\vyasn\OneDrive\Desktop\7 may\WordFrequencyAnalyzer\WordFrequencyAnalyzer\obj\Debug\net10.0\WordFrequencyAnalyzer.AssemblyInfo.cs
+C:\Users\vyasn\OneDrive\Desktop\7 may\WordFrequencyAnalyzer\WordFrequencyAnalyzer\obj\Debug\net10.0\WordFrequencyAnalyzer.csproj.CoreCompileInputs.cache
+C:\Users\vyasn\OneDrive\Desktop\7 may\WordFrequencyAnalyzer\WordFrequencyAnalyzer\obj\Debug\net10.0\WordFrequencyAnalyzer.dll
+C:\Users\vyasn\OneDrive\Desktop\7 may\WordFrequencyAnalyzer\WordFrequencyAnalyzer\obj\Debug\net10.0\refint\WordFrequencyAnalyzer.dll
+C:\Users\vyasn\OneDrive\Desktop\7 may\WordFrequencyAnalyzer\WordFrequencyAnalyzer\obj\Debug\net10.0\WordFrequencyAnalyzer.pdb
+C:\Users\vyasn\OneDrive\Desktop\7 may\WordFrequencyAnalyzer\WordFrequencyAnalyzer\obj\Debug\net10.0\WordFrequencyAnalyzer.genruntimeconfig.cache
+C:\Users\vyasn\OneDrive\Desktop\7 may\WordFrequencyAnalyzer\WordFrequencyAnalyzer\obj\Debug\net10.0\ref\WordFrequencyAnalyzer.dll

@@ -1,0 +1,4 @@
+C:\Users\vyasn\OneDrive\Desktop\emp\WarehouseStockTracker\obj\Debug\net10.0\WarehouseStockTracker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vyasn\OneDrive\Desktop\emp\WarehouseStockTracker\obj\Debug\net10.0\WarehouseStockTracker.AssemblyInfoInputs.cache
+C:\Users\vyasn\OneDrive\Desktop\emp\WarehouseStockTracker\obj\Debug\net10.0\WarehouseStockTracker.AssemblyInfo.cs
+C:\Users\vyasn\OneDrive\Desktop\emp\WarehouseStockTracker\obj\Debug\net10.0\WarehouseStockTracker.csproj.CoreCompileInputs.cache

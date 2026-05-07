@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vyasn\\OneDrive\\Desktop\\7 may\\StudentGradeProcessor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0B7E9A70-7367-45FE-BD21-D3B4E128A76F}|StudentGradeProcessor\\StudentGradeProcessor.csproj|c:\\users\\vyasn\\onedrive\\desktop\\7 may\\studentgradeprocessor\\studentgradeprocessor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B7E9A70-7367-45FE-BD21-D3B4E128A76F}|StudentGradeProcessor\\StudentGradeProcessor.csproj|solutionrelative:studentgradeprocessor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vyasn\\OneDrive\\Desktop\\7 may\\StudentGradeProcessor\\StudentGradeProcessor\\Program.cs",
+              "RelativeDocumentMoniker": "StudentGradeProcessor\\Program.cs",
+              "ToolTip": "C:\\Users\\vyasn\\OneDrive\\Desktop\\7 may\\StudentGradeProcessor\\StudentGradeProcessor\\Program.cs*",
+              "RelativeToolTip": "StudentGradeProcessor\\Program.cs*",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwEcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T08:57:39.43Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+C:\Users\vyasn\OneDrive\Desktop\7 may\CustomerPreferenceAnalysis\CustomerPreferenceAnalysis\bin\Debug\net10.0\CustomerPreferenceAnalysis.exe
+C:\Users\vyasn\OneDrive\Desktop\7 may\CustomerPreferenceAnalysis\CustomerPreferenceAnalysis\bin\Debug\net10.0\CustomerPreferenceAnalysis.deps.json
+C:\Users\vyasn\OneDrive\Desktop\7 may\CustomerPreferenceAnalysis\CustomerPreferenceAnalysis\bin\Debug\net10.0\CustomerPreferenceAnalysis.runtimeconfig.json
+C:\Users\vyasn\OneDrive\Desktop\7 may\CustomerPreferenceAnalysis\CustomerPreferenceAnalysis\bin\Debug\net10.0\CustomerPreferenceAnalysis.dll
+C:\Users\vyasn\OneDrive\Desktop\7 may\CustomerPreferenceAnalysis\CustomerPreferenceAnalysis\bin\Debug\net10.0\CustomerPreferenceAnalysis.pdb
+C:\Users\vyasn\OneDrive\Desktop\7 may\CustomerPreferenceAnalysis\CustomerPreferenceAnalysis\obj\Debug\net10.0\CustomerPreferenceAnalysis.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vyasn\OneDrive\Desktop\7 may\CustomerPreferenceAnalysis\CustomerPreferenceAnalysis\obj\Debug\net10.0\CustomerPreferenceAnalysis.AssemblyInfoInputs.cache
+C:\Users\vyasn\OneDrive\Desktop\7 may\CustomerPreferenceAnalysis\CustomerPreferenceAnalysis\obj\Debug\net10.0\CustomerPreferenceAnalysis.AssemblyInfo.cs
+C:\Users\vyasn\OneDrive\Desktop\7 may\CustomerPreferenceAnalysis\CustomerPreferenceAnalysis\obj\Debug\net10.0\CustomerPreferenceAnalysis.csproj.CoreCompileInputs.cache
+C:\Users\vyasn\OneDrive\Desktop\7 may\CustomerPreferenceAnalysis\CustomerPreferenceAnalysis\obj\Debug\net10.0\CustomerPreferenceAnalysis.dll
+C:\Users\vyasn\OneDrive\Desktop\7 may\CustomerPreferenceAnalysis\CustomerPreferenceAnalysis\obj\Debug\net10.0\refint\CustomerPreferenceAnalysis.dll
+C:\Users\vyasn\OneDrive\Desktop\7 may\CustomerPreferenceAnalysis\CustomerPreferenceAnalysis\obj\Debug\net10.0\CustomerPreferenceAnalysis.pdb
+C:\Users\vyasn\OneDrive\Desktop\7 may\CustomerPreferenceAnalysis\CustomerPreferenceAnalysis\obj\Debug\net10.0\CustomerPreferenceAnalysis.genruntimeconfig.cache
+C:\Users\vyasn\OneDrive\Desktop\7 may\CustomerPreferenceAnalysis\CustomerPreferenceAnalysis\obj\Debug\net10.0\ref\CustomerPreferenceAnalysis.dll
