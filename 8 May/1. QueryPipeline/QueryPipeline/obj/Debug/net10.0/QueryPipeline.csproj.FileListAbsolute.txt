@@ -1,0 +1,14 @@
+C:\Users\vyasn\OneDrive\Desktop\8 May\QueryPipeline\QueryPipeline\bin\Debug\net10.0\QueryPipeline.exe
+C:\Users\vyasn\OneDrive\Desktop\8 May\QueryPipeline\QueryPipeline\bin\Debug\net10.0\QueryPipeline.deps.json
+C:\Users\vyasn\OneDrive\Desktop\8 May\QueryPipeline\QueryPipeline\bin\Debug\net10.0\QueryPipeline.runtimeconfig.json
+C:\Users\vyasn\OneDrive\Desktop\8 May\QueryPipeline\QueryPipeline\bin\Debug\net10.0\QueryPipeline.dll
+C:\Users\vyasn\OneDrive\Desktop\8 May\QueryPipeline\QueryPipeline\bin\Debug\net10.0\QueryPipeline.pdb
+C:\Users\vyasn\OneDrive\Desktop\8 May\QueryPipeline\QueryPipeline\obj\Debug\net10.0\QueryPipeline.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vyasn\OneDrive\Desktop\8 May\QueryPipeline\QueryPipeline\obj\Debug\net10.0\QueryPipeline.AssemblyInfoInputs.cache
+C:\Users\vyasn\OneDrive\Desktop\8 May\QueryPipeline\QueryPipeline\obj\Debug\net10.0\QueryPipeline.AssemblyInfo.cs
+C:\Users\vyasn\OneDrive\Desktop\8 May\QueryPipeline\QueryPipeline\obj\Debug\net10.0\QueryPipeline.csproj.CoreCompileInputs.cache
+C:\Users\vyasn\OneDrive\Desktop\8 May\QueryPipeline\QueryPipeline\obj\Debug\net10.0\QueryPipeline.dll
+C:\Users\vyasn\OneDrive\Desktop\8 May\QueryPipeline\QueryPipeline\obj\Debug\net10.0\refint\QueryPipeline.dll
+C:\Users\vyasn\OneDrive\Desktop\8 May\QueryPipeline\QueryPipeline\obj\Debug\net10.0\QueryPipeline.pdb
+C:\Users\vyasn\OneDrive\Desktop\8 May\QueryPipeline\QueryPipeline\obj\Debug\net10.0\QueryPipeline.genruntimeconfig.cache
+C:\Users\vyasn\OneDrive\Desktop\8 May\QueryPipeline\QueryPipeline\obj\Debug\net10.0\ref\QueryPipeline.dll

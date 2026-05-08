@@ -1,0 +1,14 @@
+C:\Users\vyasn\OneDrive\Desktop\8 May\BankAccountHierarchy\BankAccountHierarchy\bin\Debug\net10.0\BankAccountHierarchy.exe
+C:\Users\vyasn\OneDrive\Desktop\8 May\BankAccountHierarchy\BankAccountHierarchy\bin\Debug\net10.0\BankAccountHierarchy.deps.json
+C:\Users\vyasn\OneDrive\Desktop\8 May\BankAccountHierarchy\BankAccountHierarchy\bin\Debug\net10.0\BankAccountHierarchy.runtimeconfig.json
+C:\Users\vyasn\OneDrive\Desktop\8 May\BankAccountHierarchy\BankAccountHierarchy\bin\Debug\net10.0\BankAccountHierarchy.dll
+C:\Users\vyasn\OneDrive\Desktop\8 May\BankAccountHierarchy\BankAccountHierarchy\bin\Debug\net10.0\BankAccountHierarchy.pdb
+C:\Users\vyasn\OneDrive\Desktop\8 May\BankAccountHierarchy\BankAccountHierarchy\obj\Debug\net10.0\BankAccountHierarchy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vyasn\OneDrive\Desktop\8 May\BankAccountHierarchy\BankAccountHierarchy\obj\Debug\net10.0\BankAccountHierarchy.AssemblyInfoInputs.cache
+C:\Users\vyasn\OneDrive\Desktop\8 May\BankAccountHierarchy\BankAccountHierarchy\obj\Debug\net10.0\BankAccountHierarchy.AssemblyInfo.cs
+C:\Users\vyasn\OneDrive\Desktop\8 May\BankAccountHierarchy\BankAccountHierarchy\obj\Debug\net10.0\BankAccountHierarchy.csproj.CoreCompileInputs.cache
+C:\Users\vyasn\OneDrive\Desktop\8 May\BankAccountHierarchy\BankAccountHierarchy\obj\Debug\net10.0\BankAccountHierarchy.dll
+C:\Users\vyasn\OneDrive\Desktop\8 May\BankAccountHierarchy\BankAccountHierarchy\obj\Debug\net10.0\refint\BankAccountHierarchy.dll
+C:\Users\vyasn\OneDrive\Desktop\8 May\BankAccountHierarchy\BankAccountHierarchy\obj\Debug\net10.0\BankAccountHierarchy.pdb
+C:\Users\vyasn\OneDrive\Desktop\8 May\BankAccountHierarchy\BankAccountHierarchy\obj\Debug\net10.0\BankAccountHierarchy.genruntimeconfig.cache
+C:\Users\vyasn\OneDrive\Desktop\8 May\BankAccountHierarchy\BankAccountHierarchy\obj\Debug\net10.0\ref\BankAccountHierarchy.dll
