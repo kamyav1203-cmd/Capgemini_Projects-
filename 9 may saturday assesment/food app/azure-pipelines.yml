@@ -1,0 +1,72 @@
+trigger:
+  branches:
+    include:
+      - main
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  buildConfiguration: Release
+  apiProject: src/FoodOrdering.Api/FoodOrdering.Api.csproj
+  testProject: tests/FoodOrdering.Tests/FoodOrdering.Tests.csproj
+
+stages:
+  - stage: Build_Test_Publish
+    displayName: Build, test, and publish
+    jobs:
+      - job: build
+        steps:
+          - task: UseDotNet@2
+            displayName: Install .NET 8 SDK
+            inputs:
+              packageType: sdk
+              version: 8.x
+
+          - script: dotnet restore $(apiProject)
+            displayName: Restore API
+
+          - script: dotnet build $(apiProject) --configuration $(buildConfiguration) --no-restore
+            displayName: Build API
+
+          - script: dotnet test $(testProject) --configuration $(buildConfiguration) --logger trx
+            displayName: Run unit tests
+
+          - task: NodeTool@0
+            displayName: Install Node
+            inputs:
+              versionSpec: 24.x
+
+          - script: |
+              cd frontend
+              npm install
+              npm run build
+            displayName: Build React frontend
+
+          - script: dotnet publish $(apiProject) --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/api
+            displayName: Publish API
+
+          - task: PublishBuildArtifacts@1
+            displayName: Publish artifacts
+            inputs:
+              PathtoPublish: $(Build.ArtifactStagingDirectory)
+              ArtifactName: drop
+
+  - stage: Deploy
+    displayName: Deploy to Azure App Service
+    dependsOn: Build_Test_Publish
+    condition: succeeded()
+    jobs:
+      - deployment: deploy_api
+        environment: production
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - task: AzureWebApp@1
+                  displayName: Deploy API
+                  inputs:
+                    azureSubscription: CHANGE_ME_SERVICE_CONNECTION
+                    appType: webAppLinux
+                    appName: CHANGE_ME_APP_SERVICE_NAME
+                    package: $(Pipeline.Workspace)/drop/api

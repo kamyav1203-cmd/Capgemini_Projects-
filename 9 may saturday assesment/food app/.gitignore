@@ -1,0 +1,11 @@
+bin/
+obj/
+.vs/
+.vscode/
+node_modules/
+dist/
+*.user
+*.suo
+appsettings.Production.json
+.env
+TestResults/
