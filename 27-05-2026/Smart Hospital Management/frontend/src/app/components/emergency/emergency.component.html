@@ -1,0 +1,44 @@
+<div class="card">
+  <h2>Emergency Requests</h2>
+  <p class="error" *ngIf="message">{{ message }}</p>
+  <form (ngSubmit)="createEmergency()">
+    <label>Patient</label>
+    <select [(ngModel)]="model.patientId" name="patientId" required>
+      <option value="0">Choose patient</option>
+      <option *ngFor="let patient of patients" [value]="patient.id">{{ patient.fullName }}</option>
+    </select>
+
+    <label>Description</label>
+    <textarea [(ngModel)]="model.description" name="description" required></textarea>
+
+    <label>Location</label>
+    <input [(ngModel)]="model.location" name="location" required />
+
+    <button type="submit">Submit Emergency</button>
+  </form>
+
+  <h3>Active Emergencies</h3>
+  <table *ngIf="emergencies.length; else empty">
+    <thead>
+      <tr>
+        <th>Patient</th>
+        <th>Description</th>
+        <th>Location</th>
+        <th>Status</th>
+        <th>Requested At</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emergency of emergencies">
+        <td>{{ emergency.patientName }}</td>
+        <td>{{ emergency.description }}</td>
+        <td>{{ emergency.location }}</td>
+        <td>{{ emergency.status }}</td>
+        <td>{{ emergency.requestedAt }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <ng-template #empty>
+    <p>No emergency requests found.</p>
+  </ng-template>
+</div>

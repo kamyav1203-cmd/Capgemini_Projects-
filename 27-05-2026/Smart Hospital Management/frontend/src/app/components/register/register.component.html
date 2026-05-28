@@ -1,0 +1,33 @@
+<div class="card">
+  <h2>Register</h2>
+  <form (ngSubmit)="register()">
+    <label>Full Name</label>
+    <input type="text" [(ngModel)]="model.fullName" name="fullName" required />
+
+    <label>Email</label>
+    <input type="email" [(ngModel)]="model.email" name="email" required />
+
+    <label>Password</label>
+    <input type="password" [(ngModel)]="model.password" name="password" required />
+
+    <label>Role</label>
+    <select [(ngModel)]="model.role" name="role">
+      <option value="Admin">Admin</option>
+      <option value="Doctor">Doctor</option>
+      <option value="Receptionist">Receptionist</option>
+      <option value="Patient">Patient</option>
+      <option value="Pharmacist">Pharmacist</option>
+      <option value="LabTechnician">LabTechnician</option>
+    </select>
+
+    <label>Branch</label>
+    <select [(ngModel)]="model.branchId" name="branchId">
+      <option [ngValue]="undefined">No branch</option>
+      <option *ngFor="let branch of branches" [ngValue]="branch.id">{{ branch.name }}</option>
+    </select>
+
+    <button type="submit">Register</button>
+    <p class="error" *ngIf="message">{{ message }}</p>
+    <p>Already have an account? <a routerLink="/login">Login</a></p>
+  </form>
+</div>

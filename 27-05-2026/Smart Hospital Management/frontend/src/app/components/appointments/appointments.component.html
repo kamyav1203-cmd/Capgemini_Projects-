@@ -1,0 +1,48 @@
+<div class="card">
+  <h2>Appointments</h2>
+  <p class="error" *ngIf="message">{{ message }}</p>
+  <form (ngSubmit)="bookAppointment()">
+    <label>Patient</label>
+    <select [(ngModel)]="model.patientId" name="patientId" required>
+      <option value="0">Select patient</option>
+      <option *ngFor="let patient of patients" [value]="patient.id">{{ patient.fullName }}</option>
+    </select>
+
+    <label>Doctor</label>
+    <select [(ngModel)]="model.doctorId" name="doctorId" required>
+      <option value="0">Select doctor</option>
+      <option *ngFor="let doctor of doctors" [value]="doctor.id">{{ doctor.fullName }} ({{ doctor.specialization }})</option>
+    </select>
+
+    <label>Appointment Date</label>
+    <input type="datetime-local" [(ngModel)]="model.appointmentDate" name="appointmentDate" required />
+
+    <label>Symptoms</label>
+    <textarea [(ngModel)]="model.symptoms" name="symptoms"></textarea>
+
+    <button type="submit">Book Appointment</button>
+  </form>
+
+  <h3>Appointment List</h3>
+  <table *ngIf="appointments.length; else empty">
+    <thead>
+      <tr>
+        <th>Patient</th>
+        <th>Doctor</th>
+        <th>Date</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let appointment of appointments">
+        <td>{{ appointment.patientName }}</td>
+        <td>{{ appointment.doctorName }}</td>
+        <td>{{ appointment.appointmentDate }}</td>
+        <td><span class="status">{{ appointment.status }}</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <ng-template #empty>
+    <p>No appointments found.</p>
+  </ng-template>
+</div>

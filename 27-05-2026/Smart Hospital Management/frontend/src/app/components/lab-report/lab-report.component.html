@@ -1,0 +1,47 @@
+<div class="card">
+  <h2>Lab Reports</h2>
+  <p class="error" *ngIf="message">{{ message }}</p>
+  <form (ngSubmit)="createReport()">
+    <label>Patient</label>
+    <select [(ngModel)]="model.patientId" name="patientId" required>
+      <option value="0">Choose patient</option>
+      <option *ngFor="let patient of patients" [value]="patient.id">{{ patient.fullName }}</option>
+    </select>
+
+    <label>Test Name</label>
+    <select [(ngModel)]="model.testName" name="testName" required>
+      <option *ngFor="let testName of testNames" [value]="testName">{{ testName }}</option>
+    </select>
+
+    <label>Result</label>
+    <input [(ngModel)]="model.result" name="result" required />
+
+    <label>File Path</label>
+    <input [(ngModel)]="model.filePath" name="filePath" />
+
+    <button type="submit">Upload Report</button>
+  </form>
+
+  <h3>Reports</h3>
+  <table *ngIf="reports.length; else empty">
+    <thead>
+      <tr>
+        <th>Patient</th>
+        <th>Test</th>
+        <th>Result</th>
+        <th>Uploaded At</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let report of reports">
+        <td>{{ report.patientName }}</td>
+        <td>{{ report.testName }}</td>
+        <td>{{ report.result }}</td>
+        <td>{{ report.uploadedAt }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <ng-template #empty>
+    <p>No lab reports available.</p>
+  </ng-template>
+</div>

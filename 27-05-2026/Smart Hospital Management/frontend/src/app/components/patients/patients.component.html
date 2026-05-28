@@ -1,0 +1,60 @@
+<div class="card">
+  <h2>Patients</h2>
+  <p class="error" *ngIf="message">{{ message }}</p>
+  <form (ngSubmit)="createPatient()">
+    <div>
+      <label>User ID</label>
+      <input [(ngModel)]="model.userId" name="userId" required />
+    </div>
+    <div>
+      <label>Age</label>
+      <input type="number" [(ngModel)]="model.age" name="age" required />
+    </div>
+    <div>
+      <label>Gender</label>
+      <select [(ngModel)]="model.gender" name="gender" required>
+        <option *ngFor="let gender of genders" [value]="gender">{{ gender }}</option>
+      </select>
+    </div>
+    <div>
+      <label>Blood Group</label>
+      <select [(ngModel)]="model.bloodGroup" name="bloodGroup" required>
+        <option *ngFor="let group of bloodGroups" [value]="group">{{ group }}</option>
+      </select>
+    </div>
+    <div>
+      <label>Emergency Contact</label>
+      <input [(ngModel)]="model.emergencyContact" name="emergencyContact" required />
+    </div>
+    <div>
+      <label>Medical History</label>
+      <textarea [(ngModel)]="model.medicalHistory" name="medicalHistory"></textarea>
+    </div>
+    <button type="submit">Create Patient</button>
+  </form>
+
+  <h3>Patient List</h3>
+  <table *ngIf="patients.length; else empty">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Blood Group</th>
+        <th>Emergency Contact</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let patient of patients">
+        <td>{{ patient.fullName }}</td>
+        <td>{{ patient.age }}</td>
+        <td>{{ patient.gender }}</td>
+        <td>{{ patient.bloodGroup }}</td>
+        <td>{{ patient.emergencyContact }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <ng-template #empty>
+    <p>No patients available yet.</p>
+  </ng-template>
+</div>

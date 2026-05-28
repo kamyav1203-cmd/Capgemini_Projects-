@@ -1,0 +1,46 @@
+<div class="card">
+  <h2>Doctors</h2>
+  <p class="error" *ngIf="message">{{ message }}</p>
+  <form (ngSubmit)="createDoctor()">
+    <label>User ID</label>
+    <input [(ngModel)]="model.userId" name="userId" required />
+
+    <label>Specialization</label>
+    <select [(ngModel)]="model.specialization" name="specialization" required>
+      <option *ngFor="let specialization of specializations" [value]="specialization">{{ specialization }}</option>
+    </select>
+
+    <label>Experience Years</label>
+    <input type="number" [(ngModel)]="model.experienceYears" name="experienceYears" required />
+
+    <label>Consultation Fee</label>
+    <input type="number" [(ngModel)]="model.consultationFee" name="consultationFee" required />
+
+    <button type="submit">Add Doctor</button>
+  </form>
+
+  <h3>Doctor List</h3>
+  <table *ngIf="doctors.length; else empty">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Specialization</th>
+        <th>Experience</th>
+        <th>Fee</th>
+        <th>Available</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let doctor of doctors">
+        <td>{{ doctor.fullName }}</td>
+        <td>{{ doctor.specialization }}</td>
+        <td>{{ doctor.experienceYears }}</td>
+        <td>{{ doctor.consultationFee | currency:'INR' }}</td>
+        <td>{{ doctor.isAvailable ? 'Yes' : 'No' }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <ng-template #empty>
+    <p>No doctors available.</p>
+  </ng-template>
+</div>

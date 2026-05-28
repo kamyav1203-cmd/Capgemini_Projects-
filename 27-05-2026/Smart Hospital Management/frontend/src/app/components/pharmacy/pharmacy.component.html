@@ -1,0 +1,62 @@
+<div class="card">
+  <h2>Pharmacy Inventory</h2>
+  <p class="error" *ngIf="message">{{ message }}</p>
+  <form (ngSubmit)="addMedicine()">
+    <label>Name</label>
+    <input [(ngModel)]="model.name" name="name" required />
+
+    <label>Manufacturer</label>
+    <select [(ngModel)]="model.manufacturer" name="manufacturer" required>
+      <option *ngFor="let manufacturer of manufacturers" [value]="manufacturer">{{ manufacturer }}</option>
+    </select>
+
+    <label>Price</label>
+    <input type="number" [(ngModel)]="model.price" name="price" required />
+
+    <label>Stock Quantity</label>
+    <input type="number" [(ngModel)]="model.stockQuantity" name="stockQuantity" required />
+
+    <label>Expiry Date</label>
+    <input type="date" [(ngModel)]="model.expiryDate" name="expiryDate" required />
+
+    <button type="submit">Add Medicine</button>
+  </form>
+
+  <div style="margin-top: 24px;">
+    <h3>Update Stock</h3>
+    <label>Medicine</label>
+    <select [(ngModel)]="selectedMedicineId" name="selectedMedicineId">
+      <option value="0">Select medicine</option>
+      <option *ngFor="let item of medicines" [value]="item.id">{{ item.name }}</option>
+    </select>
+
+    <label>New Quantity</label>
+    <input type="number" [(ngModel)]="updateQuantity" name="updateQuantity" />
+    <button type="button" (click)="updateStock()">Update Stock</button>
+  </div>
+
+  <h3>Medicine List</h3>
+  <table *ngIf="medicines.length; else empty">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Manufacturer</th>
+        <th>Price</th>
+        <th>Stock</th>
+        <th>Expiry</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of medicines">
+        <td>{{ item.name }}</td>
+        <td>{{ item.manufacturer }}</td>
+        <td>{{ item.price | currency:'INR' }}</td>
+        <td>{{ item.stockQuantity }}</td>
+        <td>{{ item.expiryDate }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <ng-template #empty>
+    <p>No medicines found.</p>
+  </ng-template>
+</div>

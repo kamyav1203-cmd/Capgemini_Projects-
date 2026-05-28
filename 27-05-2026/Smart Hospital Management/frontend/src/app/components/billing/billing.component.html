@@ -1,0 +1,48 @@
+<div class="card">
+  <h2>Billing</h2>
+  <p class="error" *ngIf="message">{{ message }}</p>
+  <form (ngSubmit)="createBill()">
+    <label>Patient</label>
+    <select [(ngModel)]="model.patientId" name="patientId" required>
+      <option value="0">Select patient</option>
+      <option *ngFor="let patient of patients" [value]="patient.id">{{ patient.fullName }}</option>
+    </select>
+
+    <label>Amount</label>
+    <input type="number" [(ngModel)]="model.amount" name="amount" required />
+
+    <label>Payment Method</label>
+    <select [(ngModel)]="model.paymentMethod" name="paymentMethod">
+      <option value="Cash">Cash</option>
+      <option value="Card">Card</option>
+      <option value="UPI">UPI</option>
+    </select>
+
+    <button type="submit">Create Bill</button>
+  </form>
+
+  <h3>Bill List</h3>
+  <table *ngIf="bills.length; else empty">
+    <thead>
+      <tr>
+        <th>Patient</th>
+        <th>Amount</th>
+        <th>Method</th>
+        <th>Status</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let bill of bills">
+        <td>{{ bill.patientName }}</td>
+        <td>{{ bill.amount | currency:'INR' }}</td>
+        <td>{{ bill.paymentMethod }}</td>
+        <td>{{ bill.paymentStatus }}</td>
+        <td>{{ bill.billingDate }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <ng-template #empty>
+    <p>No bills available.</p>
+  </ng-template>
+</div>

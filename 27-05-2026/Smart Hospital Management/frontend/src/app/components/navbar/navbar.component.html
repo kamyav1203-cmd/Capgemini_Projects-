@@ -1,0 +1,12 @@
+<nav class="card">
+  <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+  <a routerLink="/patients" routerLinkActive="active">Patients</a>
+  <a routerLink="/doctors" routerLinkActive="active">Doctors</a>
+  <a routerLink="/appointments" routerLinkActive="active">Appointments</a>
+  <a routerLink="/billing" routerLinkActive="active">Billing</a>
+  <a routerLink="/emergency" routerLinkActive="active">Emergency</a>
+  <a routerLink="/lab-reports" routerLinkActive="active">Lab Reports</a>
+  <a routerLink="/pharmacy" routerLinkActive="active">Pharmacy</a>
+  <span style="margin-left:auto"></span>
+  <button *ngIf="authService.isAuthenticated()" (click)="logout()">Logout</button>
+</nav>

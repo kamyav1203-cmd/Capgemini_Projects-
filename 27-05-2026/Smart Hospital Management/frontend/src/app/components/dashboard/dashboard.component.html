@@ -1,0 +1,20 @@
+<div class="card">
+  <h2>Admin Dashboard</h2>
+  <p class="error" *ngIf="error">{{ error }}</p>
+  <div *ngIf="stats; else loading">
+    <table>
+      <tbody>
+        <tr><th>Total Patients</th><td>{{ stats.totalPatients }}</td></tr>
+        <tr><th>Total Doctors</th><td>{{ stats.totalDoctors }}</td></tr>
+        <tr><th>Total Appointments</th><td>{{ stats.totalAppointments }}</td></tr>
+        <tr><th>Total Bills</th><td>{{ stats.totalBills }}</td></tr>
+        <tr><th>Total Emergencies</th><td>{{ stats.totalEmergencies }}</td></tr>
+        <tr><th>Total Medicines</th><td>{{ stats.totalMedicines }}</td></tr>
+        <tr><th>Total Revenue</th><td>{{ stats.totalRevenue | currency:'INR' }}</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <ng-template #loading>
+    <p>Loading dashboard metrics...</p>
+  </ng-template>
+</div>
